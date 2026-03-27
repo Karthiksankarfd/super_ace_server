@@ -1,0 +1,8 @@
+export enum Events {
+  INFO = "INFO",
+  JOIN_ROOM = "JOIN_ROOM",
+  PLACE_BET = "PLACE_BET",
+  REPLACE = "REPLACE",
+  EVALUATED = "EVALUATED",
+  BACK_TO_LOBBY = "BACK_TO_LOBBY"
+}

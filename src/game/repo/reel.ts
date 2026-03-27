@@ -1,0 +1,98 @@
+type  Symbol = {
+  name: string
+  payOut : number 
+};
+
+export let symbols : Record< string , Symbol>  = {
+    A : {
+        name : "ace",
+        payOut : 0.5 
+    },
+    S : {
+        name : "spade",
+        payOut : 0.5
+    },
+    K : {
+        name : "king",
+        payOut : 0.5
+    },
+    Q : {
+        name : "queen",
+        payOut : 0.5
+    },
+    D : {
+        name : "diamond",
+        payOut : 0.5
+    },
+    J : {
+        name : "joker",
+        payOut : 0.5
+    },
+    SC : {
+        name : "scatter",
+        payOut : 0.5
+    },
+    C : {
+        name : "clubs",
+        payOut : 0.5
+    }
+}
+
+export const weightedSymbolReel = [
+{ name: "ACE", isGolden: false },
+{ name: "KING", isGolden: false },
+{ name: "QUEEN", isGolden: true },
+{ name: "SPADE", isGolden: false },
+{ name: "DIAMOND", isGolden: false },
+{ name: "ACE", isGolden: true },
+{ name: "CLUBS", isGolden: false },
+{ name: "JOKER", isGolden: false },
+{ name: "SCATTER", isGolden: false },
+{ name: "KING", isGolden: true },
+
+{ name: "ACE", isGolden: false },
+{ name: "QUEEN", isGolden: false },
+{ name: "SPADE", isGolden: true },
+{ name: "DIAMOND", isGolden: false },
+{ name: "CLUBS", isGolden: false },
+{ name: "ACE", isGolden: false },
+{ name: "JOKER", isGolden: true },
+{ name: "KING", isGolden: false },
+{ name: "QUEEN", isGolden: false },
+{ name: "SCATTER", isGolden: false },
+
+{ name: "SPADE", isGolden: false },
+{ name: "ACE", isGolden: true },
+{ name: "DIAMOND", isGolden: true },
+{ name: "CLUBS", isGolden: false },
+{ name: "KING", isGolden: false },
+{ name: "QUEEN", isGolden: true },
+{ name: "ACE", isGolden: false },
+{ name: "JOKER", isGolden: false },
+{ name: "SPADE", isGolden: false },
+{ name: "CLUBS", isGolden: true },
+
+{ name: "DIAMOND", isGolden: false },
+{ name: "ACE", isGolden: false },
+{ name: "KING", isGolden: true },
+{ name: "QUEEN", isGolden: false },
+{ name: "SPADE", isGolden: false },
+{ name: "SCATTER", isGolden: false },
+{ name: "CLUBS", isGolden: false },
+{ name: "ACE", isGolden: true },
+{ name: "JOKER", isGolden: false },
+{ name: "KING", isGolden: false },
+
+{ name: "QUEEN", isGolden: false },
+{ name: "DIAMOND", isGolden: false },
+{ name: "SPADE", isGolden: true },
+{ name: "ACE", isGolden: false },
+{ name: "CLUBS", isGolden: false },
+{ name: "KING", isGolden: false },
+{ name: "JOKER", isGolden: true },
+{ name: "QUEEN", isGolden: false },
+{ name: "ACE", isGolden: false },
+{ name: "DIAMOND", isGolden: false }
+];
+
+export const weightedGoldenReel = [,"GA","GA","GA","GA","GA","GA","GA","GA","GK","GK","GK","GK","GK","GK","GK","GD","GD","GD","GD","GD","GD","GD","GD","GD","GQ","GQ","GQ","GQ","GQ","GQ","GS","GS","GS","GS","GS","GS","GS","GS","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC","GC"];

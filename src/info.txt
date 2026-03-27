@@ -1,0 +1,52 @@
+Redis --|
+        |--> Data Storage 
+Mysql --| 
+
+RabbitMq|--> queue
+
+Socket  |
+        |--> Interface to connect app to client
+Express |
+
+gameowns|
+REELSYM |--> 
+PAYOUT  |
+
+SERVICES|
+OWNS    |
+        |-->
+        |
+RNGMATH |
+  
+
+TPSERVCS|
+CREDIT  |--> Transaction / operator / payment services
+DEBIT   |
+
+UTILS   |
+        |--> Auditing and analytics
+Logger  |
+
+
+The evaluator functions should be able to tell the 
+1-> wins , done 
+2-> ways that particluar win can happen , its the count that the element is prsent the - DONE 
+3->is that win lines have any golden card - 
+4->then what are the matrix points that have the golden cards
+5->matrix points that needs to be eliminated and refilled
+6->Generate the partial reel for the eliminated reel and do this again and again 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
