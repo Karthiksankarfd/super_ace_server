@@ -1,3 +1,4 @@
+import chalk from "chalk";
 import { reelService } from "./Reel.services.js";
 
 let winsCategory :Record<number , Record<string , string>> = {
@@ -25,7 +26,7 @@ export default class Grid {
         let current = 1;
         let grid = [];
         while (current <= reelsCount) {
-            let reel = reelService.getReel();
+            let reel = reelService.getReel(current);
             grid.push(reel);
             current++;
         };
@@ -33,6 +34,29 @@ export default class Grid {
         let mappedGrid = this.mapTheGrid(grid);
         let wins = this.evaluate(grid[0]!, mappedGrid.mg , mappedGrid.goldenMap);
         return { grid, mappedGrid, wins };
+    };
+
+    generatePartial(grid :any , winWays :[]){
+        // replace the ceils by generating new cards based on the winWays matrix
+        // ? winWays also contains the golden cards so we should not give replacement for goldcards 
+        // ? inorder to check is the card is golden we can make use of the grid it self 
+        // TODO: if(grid[winWays[0]][winWays[1]].isGolden) then dont replace 
+        let replacedCards = []        
+        for(let i = 0 ; i < winWays.length ; i++){
+             let reel = winWays[i]![0] ;
+             let row  = winWays[i]![1] ;
+             if(!(grid[reel]![row]?.isGolden)){
+                // then only replace by getting an random card from the reel 
+                let card =  reelService.getCard()
+                console.log("card" , card)
+                let c = { 
+                    insertAt : winWays[i] ,
+                    card
+                };
+                replacedCards.push(c);
+             }
+        }
+        return replacedCards ;
     };
 
     evaluate(reelOne: Array<Card>, mappedGrid: Map<string, Map<string, Array<Array<number>>>> , goldenMap : Map<string ,  Array<Array<number>>>) {
@@ -48,73 +72,93 @@ export default class Grid {
                 char: "",
                 ways : 1,
             };
-            const win_matrix = [];
+            let win_matrix : any = [];
             while (currentCol < 4) {
                 let col = mappedGrid.get(cols[currentCol]!); // MAP VALUE OF FIRST COL OF GRID
-                    if(!col?.has(base!)){
-                        break;
+                    // ? wild substitute or base are considered 
+                    if(col?.has(base!) || col?.has("JOKER-WILD-BIG") || col?.has("JOKER-WILD-SMALL")){ // only consider when the flip happend
+                        match++;
+                        currentCol++; // 
+                        console.log(chalk.red("THIS IS THE MAPPED ITEMS FOR THE CURRENT COLUMN" , currentCol))
+                        console.log(col!?.get(base!)! , "THE BASE COUNT IN THE CURRENT COLUMN")
+                        let passedCard ;
+                        if(col?.has("JOKER-WILD-BIG")){
+                            passedCard = "JOKER-WILD-BIG"
+                        }else if(col?.has("JOKER-WILD-SMALL")){
+                            passedCard = "JOKER-WILD-SMALL"
+                        }else{
+                            passedCard = base!
+                        }
+                        win_matrix = [...win_matrix ,  ...col?.get(passedCard)!] ;
+                        let occuranceOfBase = col?.get(base!)?.length!
+                        if(occuranceOfBase > 1){
+                             ways = ways * occuranceOfBase;
+                        };
+                    }else{
+                        break ;
                     }
-                    match++;
-                    currentCol++;
-                    win_matrix.push(col.get(base!));
-                    let occuranceOfBase = col.get(base!)?.length!
-                    if(occuranceOfBase > 1){
-                       ways = ways * occuranceOfBase;
-                    };
             };
+
             if(match >= 3){
-                if(goldenMap.has(base!) ){
-                          
-                }
                 win_details.win = winsCategory?.[match]?.type || "NO WIN";
                 win_details.char = base! ;
                 win_details.ways = ( ways === 0 ) ? 1 : ways; 
                 winMap.set(base, win_details);
-                if(winMap.has("win_matrix")){
-                  winMap.get(`win_matrix`).push([win_matrix]);
+                winMap.set("lockedCards" , goldenMap.has(base!) ? [...goldenMap.get(base!)!] : [])
+                // console.log(chalk.red("THE WIN MATRIX FROM THE GRID SERVICES "))
+                if(winMap.has("win_matrix")){ 
+                    // spread the current win_matrix 
+                    winMap.set("win_matrix", [...winMap.get("win_matrix") , ...win_matrix]);
                 }else{
-                  winMap.set(`win_matrix` , [win_matrix]);           
+                  console.log(chalk.red("THE WIN MATRIX FROM THE GRID SERVICES "))
+                  console.log(win_matrix);
+                  winMap.set(`win_matrix` , win_matrix);           
                 }
-            }
+            }; 
+
+            // if(winMap.get("lockedCards")?.length){
+            //     canFlip = true ;
+            // }
         }
+        
         return winMap ;
     };
 
-    mapTheGrid(grid : any) {
+    mapTheGrid(grid : any) { 
         let current = 0; // this points to the reel in our grid
         const mappedGrid = new Map(); 
         const goldenMap = new Map();
         const goldenCards = [];
         while (current <= 4) {
-            if (current >= 0) {
                 let reel = grid[current];   
                 let map = `col${current}map` // * dynamic key naming
                 mappedGrid.set(map, new Map()); // * creation of map for col
-                for (let j = 0; j < 4; j++) { // * heer the reel[j] is ppinting to the element in the particular reel
-                    let col = mappedGrid.get(map);
-
+                let col = mappedGrid.get(map);
+                for (let j = 0; j < 4; j++) { // * heer the reel[j] is ppinting to the element in the particular ree
                     if(reel[j].isGolden){
+                        // let data = {
+                        //     name : reel[j].name,
+                        //     co_ordinates :{col:current ,  row : j}
+                        // }; 
                         goldenCards.push([current , j]) 
-                       if(goldenMap.get(reel[j])){
-                          goldenMap.get(reel[j]).push([current , j])
+                       if(goldenMap.get(reel[j].name)){
+                          goldenMap.get(reel[j].name).push([current , j])  // the array should be [{name:"ace" , co-ordinate :  {col:current, row:j}}]
                        }else{
-                          goldenMap.set(reel[j] , [[current , j]])
+                          goldenMap.set(reel[j].name , [[current , j]])
                        }
                     };
-
                     if (col.has(reel[j].name)) {
                         col.get(reel[j].name).push([current, j])
                     } else {
                         col.set(reel[j].name, [[current, j]])
                     }
                 }
-            };
             current++;
         };
         let mg = structuredClone(mappedGrid);
-        return { mg , goldenCards , goldenMap } ;
+        // todo:  returns the mapped grid , goldenCards , 
+        return { mg , goldenCards , goldenMap , grid } ;
     };
-
 
 }
 

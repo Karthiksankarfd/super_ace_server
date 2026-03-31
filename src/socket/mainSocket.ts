@@ -4,8 +4,9 @@ import { getUserDataFromSource } from "../services/userInfo.js";
 import { deleteCache, getCache, redis, setCache} from "../connections/redisService.js";
 import { updateBalanceFromAccount } from "../services/Admin.service.js";
 import Game from "../game/Game.js";
+import { gridService } from "../game.services/Grid.services.js";
 
-const game = new Game()
+const game = new Game() ; 
 export const initializeSocket = (io: Server) => {
     io.on('connection', async (socket: Socket) => {
         console.log(chalk.gray("User Connected: ", socket.id));
@@ -74,9 +75,20 @@ export const initializeSocket = (io: Server) => {
             console.table(  data.mappedGrid.goldenCards )
             console.log(chalk.bgBlue("--THE WINS FROM THE MATRIX--"))               
             console.table(data.wins)
+            console.table(data.wins.get("win_matrix"))
             console.log(chalk.bgBlue("--THIS IS THE GOLDEN CARD MATRIX CO-ORDINATES PER REELS"))
             console.table(data.mappedGrid.goldenMap)
-            socket.emit("gridGenerated" , data)
+            console.log(chalk.bgBlue("LOCKED GOLDEN CARDS"));
+            console.log(data?.wins.get("lockedCards"));
+            console.log(chalk.bgBlue("WIN WAYS IN THE GRID"));
+            console.log(data.wins.get("win_matrix"));
+            socket.emit("gridGenerated" , {data , grid: data.grid , win_ways: data.wins.get("win_matrix"), locked_cards : data.wins.get("lockedCards")})
+            if(data.wins.get("win_matrix").length > 0){
+                console.log(chalk.greenBright("WIN IS THERE SO REMOVE AND PROVIDE REPLACE"));
+                let regeneratedCards = gridService.generatePartial(data.grid , data.wins.get("win_matrix"));
+                console.log(chalk.greenBright("THE REPLACEMENT CARDS FOR THE CURRENT MATRIX"));
+                console.log(regeneratedCards);
+            }
         })
         
         await setCache(`PL:${socket.id}`, JSON.stringify({ ...userData, socket_id: socket.id, game_state: "HOME"}), 3600);
