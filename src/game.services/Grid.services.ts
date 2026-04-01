@@ -45,15 +45,20 @@ export default class Grid {
         for(let i = 0 ; i < winWays.length ; i++){
              let reel = winWays[i]![0] ;
              let row  = winWays[i]![1] ;
+            //  console.log(chalk.red("-----------THESE ARE THE WIN MATRIX----------------"))
+            //  console.log(winWays)
              if(!(grid[reel]![row]?.isGolden)){
                 // then only replace by getting an random card from the reel 
                 let card =  reelService.getCard()
-                console.log("card" , card)
+                // console.log("card" , card)
                 let c = { 
                     insertAt : winWays[i] ,
                     card
                 };
                 replacedCards.push(c);
+             }else{
+                console.log(chalk.yellow(`The reel ${reel} row ${row} is golden card`))
+                console.log(grid[reel]![row])
              }
         }
         return replacedCards ;
@@ -61,9 +66,9 @@ export default class Grid {
 
     evaluate(reelOne: Array<Card>, mappedGrid: Map<string, Map<string, Array<Array<number>>>> , goldenMap : Map<string ,  Array<Array<number>>>) {
         let winMap = new Map();
-        let cols = ["col1map", "col2map", "col3map", "col4map"];
+        let cols = ["col0map", "col1map", "col2map", "col3map", "col4map"];
         for (let i = 0; i < reelOne.length; i++) {    
-            let base = reelOne[i]?.name; 
+            let base = reelOne[i]?.name ; 
             let currentCol = 0; 
             let match =  1;
             let ways = 1;
@@ -73,37 +78,46 @@ export default class Grid {
                 ways : 1,
             };
             let win_matrix : any = [];
-            while (currentCol < 4) {
-                let col = mappedGrid.get(cols[currentCol]!); // MAP VALUE OF FIRST COL OF GRID
-                    // ? wild substitute or base are considered 
-                    if(col?.has(base!) || col?.has("JOKER-WILD-BIG") || col?.has("JOKER-WILD-SMALL")){ // only consider when the flip happend
-                        match++;
-                        currentCol++; // 
-                        console.log(chalk.red("THIS IS THE MAPPED ITEMS FOR THE CURRENT COLUMN" , currentCol))
-                        console.log(col!?.get(base!)! , "THE BASE COUNT IN THE CURRENT COLUMN")
-                        let passedCard ;
-                        if(col?.has("JOKER-WILD-BIG")){
-                            passedCard = "JOKER-WILD-BIG"
-                        }else if(col?.has("JOKER-WILD-SMALL")){
-                            passedCard = "JOKER-WILD-SMALL"
-                        }else{
-                            passedCard = base!
-                        }
-                        win_matrix = [...win_matrix ,  ...col?.get(passedCard)!] ;
-                        let occuranceOfBase = col?.get(base!)?.length!
+            while (currentCol < 5) {
+                    let col = mappedGrid.get(cols[currentCol]!); // MAPPED VALUE OF FIRST COL OF GRID
+                    let occuranceOfBase = col?.get(base!)?.length!
+                    if(currentCol === 0){
                         if(occuranceOfBase > 1){
                              ways = ways * occuranceOfBase;
                         };
+                        win_matrix = [...win_matrix , ...col?.get(base!)!]
+                        currentCol++ ;               
                     }else{
-                        break ;
+                        if(col?.has(base!) || col?.has("JOKER-WILD-BIG") || col?.has("JOKER-WILD-SMALL")){ 
+                            match++;
+                            currentCol++; //
+                            ways = ways * occuranceOfBase ; 
+                            console.log(chalk.red("THIS IS THE MAPPED ITEMS FOR THE CURRENT COLUMN" , currentCol))
+                            console.log(col!?.get(base!)! , "THE BASE COUNT IN THE CURRENT COLUMN")
+                            let passedCard ; 
+                            // ! this has the issue reel may contain substitue and actual base cards we are not handling it***/
+                            if(col?.has("JOKER-WILD-BIG")){ 
+                                passedCard = "JOKER-WILD-BIG"
+                            }else if(col?.has("JOKER-WILD-SMALL")){
+                                passedCard = "JOKER-WILD-SMALL"
+                            }else{
+                                passedCard = base!
+                            }
+                            win_matrix = [...win_matrix ,  ...col?.get(passedCard)!] ;
+                        }else{
+                            break ;
+                        }
                     }
+                    // wild substitute or base are considered 
+                    // only consider when the flip happend
             };
-
             if(match >= 3){
                 win_details.win = winsCategory?.[match]?.type || "NO WIN";
                 win_details.char = base! ;
-                win_details.ways = ( ways === 0 ) ? 1 : ways; 
-                winMap.set(base, win_details);
+                win_details.ways = ways; 
+                // store an array that will have all the win an object by using the base as the key and win_details as value ;
+                
+                winMap.set(base, win_details); 
                 winMap.set("lockedCards" , goldenMap.has(base!) ? [...goldenMap.get(base!)!] : [])
                 // console.log(chalk.red("THE WIN MATRIX FROM THE GRID SERVICES "))
                 if(winMap.has("win_matrix")){ 
@@ -116,9 +130,6 @@ export default class Grid {
                 }
             }; 
 
-            // if(winMap.get("lockedCards")?.length){
-            //     canFlip = true ;
-            // }
         }
         
         return winMap ;
@@ -143,7 +154,7 @@ export default class Grid {
                         goldenCards.push([current , j]) 
                        if(goldenMap.get(reel[j].name)){
                           goldenMap.get(reel[j].name).push([current , j])  // the array should be [{name:"ace" , co-ordinate :  {col:current, row:j}}]
-                       }else{
+                       }else{               
                           goldenMap.set(reel[j].name , [[current , j]])
                        }
                     };
@@ -159,6 +170,7 @@ export default class Grid {
         // todo:  returns the mapped grid , goldenCards , 
         return { mg , goldenCards , goldenMap , grid } ;
     };
+
 
 }
 

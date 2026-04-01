@@ -83,11 +83,16 @@ export const initializeSocket = (io: Server) => {
             console.log(chalk.bgBlue("WIN WAYS IN THE GRID"));
             console.log(data.wins.get("win_matrix"));
             socket.emit("gridGenerated" , {data , grid: data.grid , win_ways: data.wins.get("win_matrix"), locked_cards : data.wins.get("lockedCards")})
-            if(data.wins.get("win_matrix").length > 0){
+            console.log(chalk.blue("THE NO OF WAYS WIN CAN HAPPEN IN THIS CURRENT MATRIX"));
+            console.log(data.wins.get("ACE"))
+            console.log(chalk.blue("------------------------THE WIN MAP-----------------------"));
+            console.log(data.wins)
+            if(data.wins.get("win_matrix")?.length > 0){
                 console.log(chalk.greenBright("WIN IS THERE SO REMOVE AND PROVIDE REPLACE"));
                 let regeneratedCards = gridService.generatePartial(data.grid , data.wins.get("win_matrix"));
                 console.log(chalk.greenBright("THE REPLACEMENT CARDS FOR THE CURRENT MATRIX"));
                 console.log(regeneratedCards);
+                socket.emit("REPLACE-CARDS" , {regeneratedCards , locked_cards: data.wins.get("lockedCards") ,  } )
             }
         })
         
