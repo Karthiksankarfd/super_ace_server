@@ -171,7 +171,7 @@ export default class Grid {
         return { mg , goldenCards , goldenMap , grid } ;
     };
 
-
+    
 }
 
 export const gridService = new Grid();

@@ -5,6 +5,7 @@ import { deleteCache, getCache, redis, setCache} from "../connections/redisServi
 import { updateBalanceFromAccount } from "../services/Admin.service.js";
 import Game from "../game/Game.js";
 import { gridService } from "../game.services/Grid.services.js";
+import { reelService } from "../game.services/Reel.services.js";
 
 const game = new Game() ; 
 export const initializeSocket = (io: Server) => {
@@ -92,29 +93,34 @@ export const initializeSocket = (io: Server) => {
                 let regeneratedCards = gridService.generatePartial(data.grid , data.wins.get("win_matrix"));
                 console.log(chalk.greenBright("THE REPLACEMENT CARDS FOR THE CURRENT MATRIX"));
                 console.log(regeneratedCards);
-                socket.emit("REPLACE-CARDS" , {regeneratedCards , locked_cards: data.wins.get("lockedCards") ,  } )
+                socket.emit("REPLACE-CARDS" , {regeneratedCards , locked_cards: data.wins.get("lockedCards")});
+                if(data.wins.get("lockedCards")?.length){
+                   let flipedCards = reelService.flipGoldenCard(data.wins.get("lockedCards"));
+                   socket.emit("FLIP-GOLDENCARDS" , flipedCards)
+                };
+                
             }
         })
         
-        await setCache(`PL:${socket.id}`, JSON.stringify({ ...userData, socket_id: socket.id, game_state: "HOME"}), 3600);
-        socket.on('disconnect', async  () => {
-          console.log(chalk.gray("User Disconnected: ", socket.id));
-          let user =  await redis.hgetall(`user:${socket.id}`)
-          console.log(chalk.yellow("user has disconnected so deleting all user info from cache and returing the balance if bet has been place"))
-          console.log(user)
+        // await setCache(`PL:${socket.id}`, JSON.stringify({ ...userData, socket_id: socket.id, game_state: "HOME"}), 3600);
+        // socket.on('disconnect', async  () => {
+        //   console.log(chalk.gray("User Disconnected: ", socket.id));
+        //   let user =  await redis.hgetall(`user:${socket.id}`)
+        //   console.log(chalk.yellow("user has disconnected so deleting all user info from cache and returing the balance if bet has been place"))
+        //   console.log(user)
            
-          await updateBalanceFromAccount(user , "CREDIT").then(()=>{
-            console.log("Refund inintiated")
-          }).catch((e)=>{
-            console.log(e , "Error initiating refund")
-          })
+        //   await updateBalanceFromAccount(user , "CREDIT").then(()=>{
+        //     console.log("Refund inintiated")
+        //   }).catch((e)=>{
+        //     console.log(e , "Error initiating refund")
+        //   })
  
-          await redis.hdel(`user:${socket.id}`).then(()=>{
-            console.log(chalk.green(`Deleted all cache related to socketId : ${socket.id}`))
-          }).catch((e)=>{
-            console.log("Error deleting cache " , e.message)
-          })
-        });
+        //   await redis.hdel(`user:${socket.id}`).then(()=>{
+        //     console.log(chalk.green(`Deleted all cache related to socketId : ${socket.id}`))
+        //   }).catch((e)=>{
+        //     console.log("Error deleting cache " , e.message)
+        //   })
+        // });
 
         socket.on('error', (error: Error) => {
             console.log(`Socket Error: ${socket.id}, Error: ${error.message}`);
