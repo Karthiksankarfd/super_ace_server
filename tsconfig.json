@@ -42,7 +42,9 @@
     "skipLibCheck": true,
     "esModuleInterop": true, 
     "noUnusedLocals": false,
-    "noUnusedParameters": false
-    // "allowImportingTsExtensions" : true ,
-  }
+    "noUnusedParameters": false,
+    "emitDeclarationOnly" :true,
+    "allowImportingTsExtensions" : true 
+  },
+   "include": ["src"]
 }

@@ -1,11 +1,11 @@
 import { Server, Socket } from "socket.io";
 import chalk from "chalk";
-import { getUserDataFromSource } from "../services/userInfo.js";
-import { deleteCache, getCache, redis, setCache} from "../connections/redisService.js";
+import { getUserDataFromSource } from "../services/userInfo.ts";
+import { deleteCache, getCache, redis, setCache} from "../connections/redisService.ts";
 import { updateBalanceFromAccount } from "../services/Admin.service.js";
 import Game from "../game/Game.js";
-import { gridService } from "../game.services/Grid.services.js";
-import { reelService } from "../game.services/Reel.services.js";
+import { gridService } from "../game.services/Grid.services.ts";
+import { reelService } from "../game.services/Reel.services.ts";
 
 const game = new Game() ; 
 export const initializeSocket = (io: Server) => {

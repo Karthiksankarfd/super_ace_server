@@ -2,10 +2,10 @@ import cors from "cors";
 import express from "express";
 import { config } from "dotenv";
 import { createServer } from "node:http";
-import { createLogger } from "./utils/logger.js";
+import { createLogger } from "../src/utils/logger.ts";
 import { Server as SocketIOServer } from "socket.io";
-import { initializeSocket } from "./socket/mainSocket.js";
-import { initializeRedis } from "./connections/redisService.js";
+import { initializeSocket } from "./socket/mainSocket.ts";
+import { initializeRedis } from "./connections/redisService.ts";
 
 config();
 

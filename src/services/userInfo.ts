@@ -1,5 +1,5 @@
 import axios from "axios";
-import { type FinalUserData } from "../interfaces/appInterfaces.js";
+import { type FinalUserData } from "../interfaces/appInterfaces.ts";
 
 const testBaseUrl = 'http://localhost:5800';
 

@@ -1,8 +1,8 @@
 import axios, { type AxiosRequestConfig } from 'axios';
 import crypto from 'crypto';
-import { sendToQueue } from '../utils/amqp.js';
-import { createLogger } from '../utils/logger.js';
-import type { AccountsResult, BetsData, PlayerDetails, WebhookData, WebhookKey } from "../interfaces/appInterfaces.js"
+import { sendToQueue } from '../utils/amqp.ts';
+import { createLogger } from '../utils/logger.ts';
+import type { AccountsResult, BetsData, PlayerDetails, WebhookData, WebhookKey } from "../interfaces/appInterfaces.ts"
 const thirdPartyLogger = createLogger('ThirdPartyRequest', 'jsonl');
 const failedThirdPartyLogger = createLogger('FailedThirdPartyRequest', 'jsonl');
 
