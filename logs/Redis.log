@@ -6888,3 +6888,6 @@
 {"level":"info","time":1775045449209,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
 {"level":"info","time":1775045449214,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
 {"level":"info","time":1775045449912,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775045652235,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775045652240,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775045652943,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
