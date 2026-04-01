@@ -2,7 +2,7 @@ import { Server, Socket } from "socket.io";
 import chalk from "chalk";
 import { getUserDataFromSource } from "../services/userInfo.ts";
 import { deleteCache, getCache, redis, setCache} from "../connections/redisService.ts";
-import { updateBalanceFromAccount } from "../services/Admin.service.js";
+import { updateBalanceFromAccount } from "../services/Admin.service.ts";
 import Game from "../game/Game.js";
 import { gridService } from "../game.services/Grid.services.ts";
 import { reelService } from "../game.services/Reel.services.ts";
