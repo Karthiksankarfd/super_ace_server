@@ -17,7 +17,6 @@ class Reel {
         }
         
         let stopIndex = mathservice.generateStopIndex(n);
-
         let reel: Card[] = [];
 
         for (let i = -3; i <= 0; i++) {
@@ -30,19 +29,29 @@ class Reel {
     }
 
     getCard(){
-        let index = Math.floor( Math.random() * this.symbolReel.length );
-        return this.symbolReel[index] ;
+        let index = Math.floor( Math.random() * this.symbolReelNoGolden.length);
+        return this.symbolReelNoGolden[index] ;
     }
 
     flipGoldenCard(goldenCards: Array<Array<number>>){
+        let bigOrSmall = "" ; 
         let result = [];
         for(let i = 0 ; i < goldenCards.length ; i++ ){
             let index = Math.floor(Math.random() * this.wildReel.length);
             let card = this.wildReel[index];
+            if(bigOrSmall === ""){
+                if(card.name === "BIG-JOKER-WILD"){
+                    bigOrSmall = "BIG-JOKER-WILD"
+                }else{
+                    bigOrSmall = "SMALL-JOKER-WILD"
+                };
+            }else{
+                card.name = bigOrSmall
+            }
             let data = {
                 insertAt :goldenCards[i] ,
                 card
-            } 
+            }
             result.push(data)
         }
         return result ;

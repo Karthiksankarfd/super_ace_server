@@ -1,5 +1,5 @@
 import amqp, { type Channel  , type  Options } from "amqplib";
-import { createLogger } from "./logger.js";
+import { createLogger } from "./logger";
 
 const rabbitMQLogger = createLogger("Queue");
 

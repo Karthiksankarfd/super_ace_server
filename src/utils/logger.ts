@@ -2,7 +2,7 @@ import fs, { WriteStream } from "fs";
 import path from "path"; 
 import pino from "pino";
 import type { LoggerOptions, Logger } from "pino";
-import type { LogEntry, LogLevel } from "../interfaces/appInterfaces.js";
+import type { LogEntry, LogLevel } from "../interfaces/appInterfaces";
 
 
 const colors: Record<LogLevel | 'reset', string> = {

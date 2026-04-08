@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "nodemon dist/index.js"
+    "start": "tsx dist/index.js"
   },
 "devDependencies": {
     "@types/amqplib": "^0.10.8",

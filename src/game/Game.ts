@@ -93,5 +93,19 @@ export default class Game{
 
     generatePartial(){};
 
+    espin(){ // how can you make the domain to tell this has happend ??
+        let isWin = false ;
+        let isWinHasGoldenCards = false ;
+        do{
+           let result = gridService.generateGrid() ;
+           isWin = result.wins.get("win_matrix").length > 0 ;
+           isWinHasGoldenCards = result.wins.get("lockedCards").length > 0 ;
+           if(isWinHasGoldenCards){
+               let win_co_ordinates = result.wins.get("win_matrix")
+               let replaceMentCards = gridService.generatePartial(result.grid , win_co_ordinates) ; 
+           }
+        }while(isWin) ;
+    };
+
 };
 
