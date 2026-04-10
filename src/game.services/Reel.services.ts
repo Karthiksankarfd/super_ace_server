@@ -43,7 +43,7 @@ class Reel {
                 if(card.name === "BIG-JOKER-WILD"){
                     bigOrSmall = "BIG-JOKER-WILD"
                 }else{
-                    bigOrSmall = "SMALL-JOKER-WILD"
+                    bigOrSmall = "LITTLE-JOKER-WILD"
                 };
             }else{
                 card.name = bigOrSmall

@@ -12,42 +12,42 @@ const game = new Game();
 export const initializeSocket = (io: Server) => {
     io.on('connection', async (socket: Socket) => {
         console.log(chalk.gray("User Connected: ", socket.id));
-        const { token, game_id } = socket.handshake.query as { token?: string, game_id?: string };
-        console.log("Token and Game Id: ", token, game_id);
+        // const { token, game_id } = socket.handshake.query as { token?: string, game_id?: string };
+        // console.log("Token and Game Id: ", token, game_id);
 
-        if (!token || !game_id) {
-            socket.disconnect(true);
-            console.log("Mandatory params are missing ", token);
-            return;
-        }
+        // if (!token || !game_id) {
+        //     socket.disconnect(true);
+        //     console.log("Mandatory params are missing ", token);
+        //     return;
+        // }
 
-        const userData = await getUserDataFromSource(token, game_id);
-        if (!userData) {
-            console.log('Invalid token ', token);
-            socket.disconnect(true);
-            return;
-        }
+        // const userData = await getUserDataFromSource(token, game_id);
+        // if (!userData) {
+        //     console.log('Invalid token ', token);
+        //     socket.disconnect(true);
+        //     return;
+        // }
 
-        const oldSocketId = await getCache(userData.id);
-        console.log(oldSocketId, chalk.red("This is from mainScoktet"))
-        if (oldSocketId) {
-            const oldSocket = io.sockets.sockets.get(oldSocketId);
-            console.log(oldSocket)
-            console.log(oldSocket!?.rooms, "THIS IS FROM OLDSOCKET");
-            // const rooms = Array.from(oldSocket!?.rooms).filter(room => room !== socket.id);
-            // console.log(rooms); // Output: [ 'someRoom' ]
+        // const oldSocketId = await getCache(userData.id);
+        // console.log(oldSocketId, chalk.red("This is from mainScoktet"))
+        // if (oldSocketId) {
+        //     const oldSocket = io.sockets.sockets.get(oldSocketId);
+        //     console.log(oldSocket)
+        //     console.log(oldSocket!?.rooms, "THIS IS FROM OLDSOCKET");
+        //     // const rooms = Array.from(oldSocket!?.rooms).filter(room => room !== socket.id);
+        //     // console.log(rooms); // Output: [ 'someRoom' ]
 
-            if (oldSocket) {
-                oldSocket.emit('message', {
-                    eventName: 'forceLogout',
-                    data: { message: 'User connected from another source' },
-                });
-                // join player to that room 
-                // if gametste is execpr home push delete
-                await deleteCache(oldSocketId);
-                oldSocket.disconnect(true);
-            }
-        };
+        //     if (oldSocket) {
+        //         oldSocket.emit('message', {
+        //             eventName: 'forceLogout',
+        //             data: { message: 'User connected from another source' },
+        //         });
+        //         // join player to that room 
+        //         // if gametste is execpr home push delete
+        //         await deleteCache(oldSocketId);
+        //         oldSocket.disconnect(true);
+        //     }
+        // };
         const grid = [
             ["A", "K", "Q", "Joker", "Spade"],
             ["A", "K", "Q", "Joker", "Spade"],
@@ -56,18 +56,18 @@ export const initializeSocket = (io: Server) => {
         ];
         const multiplier = ["x1", "x2", "x3", "x5"];
 
-        socket.emit('info',
-            {
-                user_id: userData.user_id,
-                operator_id: userData.operatorId,
-                balance: userData.balance,
-                token: userData.token,
-                grid,
-                min_bet: 25,
-                max_bet: 25000,
-                multiplier
-            },
-        );
+        // socket.emit('info',
+        //     {
+        //         user_id: userData.user_id,
+        //         operator_id: userData.operatorId,
+        //         balance: userData.balance,
+        //         token: userData.token,
+        //         grid,
+        //         min_bet: 25,
+        //         max_bet: 25000,
+        //         multiplier
+        //     },
+        // );
 
         socket.on("spin", () => {
                 console.log(chalk.bgGreen("--------------------------THE SPIN CYCLE HAS STARTED---------------------------"));
@@ -146,9 +146,12 @@ export const initializeSocket = (io: Server) => {
 
                     let gridMap = gridService.mapTheGrid(flipedGrid);
                     data.mappedGrid = gridMap ; // refactoring the same data object
+                    console.log(chalk.bgBlack("[-------------MAPPING OF THE CURRENT GRID-------------]"))
+                    console.log(data.mappedGrid)
 
                     let winPhaseResult = gridService.evaluate(data!.grid[0], gridMap.mg , gridMap.goldenMap);
                     data?.wins.set("win_matrix" , winPhaseResult.get("win_matrix")) // refactoring the same data object
+
                     if(!winPhaseResult.get("win_matrix")){
                         isWin = false
                     }

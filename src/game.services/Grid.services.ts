@@ -64,9 +64,11 @@ export default class Grid {
     };
 
     evaluate(reelOne: Array<Card>, mappedGrid: Map<string, Map<string, Array<Array<number>>>>, goldenMap: Map<string, Array<Array<number>>>) {
+        console.log(chalk.bgBlueBright("*/**----INSIDE THE EVALUATORE----**/*"))
         let winMap = new Map();
         winMap.set("ways", []);
         let cols = ["col0map", "col1map", "col2map", "col3map", "col4map"];
+        // wild cannot substitue for scatter and 
         for (let i = 0; i < reelOne.length; i++) {
             let base = reelOne[i]?.name;
             let currentCol = 0;
@@ -88,28 +90,46 @@ export default class Grid {
                     win_matrix = [...win_matrix, ...col?.get(base!)!]
                     currentCol++;
                 } else {
-                    if (col?.has(base!) || col?.has("JOKER-WILD-BIG") || col?.has("JOKER-WILD-SMALL")) {
-                        match++;
-                        currentCol++; //
-                        ways = ways * occuranceOfBase;
-                        console.log(chalk.red("THIS IS THE MAPPED ITEMS FOR THE CURRENT COLUMN", currentCol))
-                        console.log(col!?.get(base!)!, "THE BASE COUNT IN THE CURRENT COLUMN")
-                        let passedCard;
-                        // ! this has the issue reel may contain substitue and actual base cards we are not handling it***/
-                        if (col?.has("JOKER-WILD-BIG")) {
-                            passedCard = "JOKER-WILD-BIG"
-                        } else if (col?.has("JOKER-WILD-SMALL")) {
-                            passedCard = "JOKER-WILD-SMALL"
-                        } else {
-                            passedCard = base!
-                        }
-                        win_matrix = [...win_matrix, ...col?.get(passedCard)!];
+                    // Little Joker rules:
+                    // - Column must contain either base symbol or little-joker-wild (or both)
+                    // - Apply wild substitution only after the flip happens
+                    if(col?.has(base!) && (col?.has("BIG-JOKER-WILD") || col?.has("LITTLE-JOKER-WILD")) ){
+                         match++;
+                         currentCol++; 
+                         // calculate the number of win ways
+                         let baseCount = col?.get(base)!.length || 1 ;
+                         let bigWildCount = col?.get("BIG-JOKER-WILD")!?.length || 1 
+                         let smallWildCount = col?.get("LITTLE-JOKER-WILD")!?.length || 1 ;
+                         ways = ways * baseCount * bigWildCount * smallWildCount ;
+                         
+                         win_matrix = win_matrix = [...win_matrix, ...col?.get(base)!];
+
+                         if (col?.has("BIG-JOKER-WILD")) {
+                            win_matrix = [...win_matrix, ...col?.get("BIG-JOKER-WILD")!];
+                         }
+                         if (col?.has("LITTLE-JOKER-WILD")) {
+                            win_matrix = [...win_matrix, ...col?.get("LITTLE-JOKER-WILD")!];
+                         } 
+                    }else  {
+                        // if anyone card is present
+                        if (col?.has(base!) || col?.has("BIG-JOKER-WILD") || col?.has("LITTLE-JOKER-WILD")) {
+                            match++;
+                            currentCol++; 
+                            ways = ways * occuranceOfBase;
+                            win_matrix = [...win_matrix, ...col?.get(base)!];
+                            // console.log(chalk.red("THIS IS THE MAPPED ITEMS FOR THE CURRENT COLUMN", currentCol))
+                            // console.log(col!?.get(base!)!, "THE BASE COUNT IN THE CURRENT COLUMN");
+                            if (col?.has("BIG-JOKER-WILD")) {
+                                win_matrix = [...win_matrix, ...col?.get("BIG-JOKER-WILD")!];
+                            }
+                            if(col?.has("LITTLE-JOKER-WILD")) {
+                                win_matrix = [...win_matrix, ...col?.get("LITTLE-JOKER-WILD")!];
+                            } 
                     } else {
                         break;
                     }
                 }
-                // wild substitute or base are considered 
-                // only consider when the flip happend
+                }
             };
             if (match >= 3) {
                 win_details.win = winsCategory?.[match]?.type || "NO WIN";
@@ -147,10 +167,6 @@ export default class Grid {
             let col = mappedGrid.get(map);
             for (let j = 0; j < 4; j++) { // * heer the reel[j] is ppinting to the element in the particular ree
                 if (reel[j].isGolden) {
-                    // let data = {
-                    //     name : reel[j].name,
-                    //     co_ordinates :{col:current ,  row : j}
-                    // }; 
                     goldenCards.push([current, j])
                     if (goldenMap.get(reel[j].name)) {
                         goldenMap.get(reel[j].name).push([current, j])  // !the array should be [{name:"ace" , co-ordinate :  {col:current, row:j}}]
@@ -166,9 +182,10 @@ export default class Grid {
             }
             current++;
         };
-        let mg = structuredClone(mappedGrid);
-        // todo:  returns the mapped grid , goldenCards , 
-        return { mg, goldenCards, goldenMap, grid };
+        let mg = structuredClone(mappedGrid) ;
+
+        // todo:  returns the mapped grid , goldenCards , grid
+        return { mg , goldenCards, goldenMap, grid };
     };
 
     replaceCardsInGrid(grid: any, replaceCards: any , goldenFlip = false) {

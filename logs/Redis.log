@@ -9348,3 +9348,1011 @@
 {"level":"info","time":1775646816317,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
 {"level":"info","time":1775646816756,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
 {"level":"info","time":1775646817028,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775646976412,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775646976420,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775646976816,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775646976817,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647591537,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647591542,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647592596,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647592602,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647592972,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647592974,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647601647,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647601653,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647602059,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647602688,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647604451,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647604456,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647604775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647605338,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647606723,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647606729,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647607449,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647607670,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647609433,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647609439,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647609883,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647610672,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647615587,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647615591,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647615809,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647616683,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647800885,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647800889,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647801773,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647801774,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647805606,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647805611,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647806760,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647806761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647808384,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647808390,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647809809,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647809810,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647816907,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647816911,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647817770,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647818679,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647818684,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647819070,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647819680,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647823362,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647823367,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647823787,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647824692,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647826115,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647826121,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647828289,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647828296,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647828613,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647828617,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647832819,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647832825,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647833797,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647833803,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647847257,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647847262,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647848771,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647848780,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647850534,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647850539,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647852331,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647852337,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647853781,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647853783,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647860860,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647860865,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647861759,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647861762,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647863249,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647863255,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647863769,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647864684,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647872839,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647872846,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647873771,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647873783,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647875661,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647875666,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647876775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647876776,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647895516,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647895524,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647896806,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647896807,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647897899,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775647897908,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775647898787,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775647898790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648426297,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648426302,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648426530,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648427721,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648430957,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648430964,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648431310,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648431312,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648463878,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648463883,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648464382,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648464675,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648468984,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648468989,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648469774,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648469817,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648478663,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648478671,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648478990,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648479682,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648482245,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648482253,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648482771,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648483107,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648483915,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648483920,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648484780,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648484825,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648505895,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648505900,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648506700,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648507689,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648511576,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648511582,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648512396,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648512687,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648513455,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648513460,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648514458,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648514684,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648596974,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648596980,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648597613,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648597679,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648605040,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648605049,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648605262,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648605680,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648606471,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648606476,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648607503,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648607508,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648607762,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648607763,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648609904,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648609908,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648610449,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648611196,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648611207,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648611592,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648611802,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648612700,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648612705,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648613497,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648613681,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648615777,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648615782,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648617067,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648617072,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648617256,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648618012,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648622083,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648622089,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648622761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648622906,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648623610,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648623615,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648624020,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648624691,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648634389,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648634394,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648634615,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648635687,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648644932,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648644937,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648645772,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648645884,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648711043,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648711048,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648711763,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648711910,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648716144,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648716152,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648716438,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648716452,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648736298,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648736304,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648737132,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648737678,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648740665,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648740670,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648740850,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648741704,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648742693,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648742698,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648742995,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648743688,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648747136,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648747144,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648747774,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648747866,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648764297,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648764302,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648764678,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648765416,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648765421,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648765743,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648766008,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648768580,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648768585,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648768840,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648769676,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648774385,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648774389,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648774825,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648775709,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648779280,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648779284,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648779664,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648779752,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648785147,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648785155,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648785319,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648787481,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648787486,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648787785,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648787814,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648791414,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648791419,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648791801,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648792215,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648793198,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648793205,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648793780,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648794120,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648799979,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648799984,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648800186,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648800671,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648804497,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648804505,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648804845,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648805687,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648814572,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648814581,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648814782,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648815047,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648816372,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648816377,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648817446,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648817454,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648817686,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648817729,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648826808,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648826814,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648826973,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648827695,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648839737,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775648839742,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775648840230,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775648840678,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649037000,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649037005,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649037772,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649038700,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649041051,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649041055,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649041790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649041797,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649083991,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649083996,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649085753,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649087713,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649090082,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649090086,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649090772,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649090773,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649107013,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649107019,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649107317,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649107318,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649109772,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649109778,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649110794,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649110795,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649122930,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649122935,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649123773,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649123775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649139223,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649139229,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649139797,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649140691,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649165534,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649165538,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649166836,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649166838,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649170427,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649170433,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649170742,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649171713,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649175948,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649175952,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649176140,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649176144,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649205158,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649205165,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649205753,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649206697,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649223006,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649223011,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649223761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649223763,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649244495,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649244504,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649245758,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649245771,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649246878,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649246883,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649247779,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649247780,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649260342,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649260352,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649260776,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649261700,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649309964,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649309969,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649310749,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649311679,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649315568,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649315574,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649315762,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649315763,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649321541,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649321547,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649322762,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649322767,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649330273,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649760931,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649760940,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649762141,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649762146,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649762329,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649762331,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649773561,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649773566,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649785807,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649785813,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649787068,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649787072,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649787757,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649789127,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649789131,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649789761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649789763,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649802695,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649802700,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649803793,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649803795,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649830734,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649830740,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649831773,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649832696,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649839612,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649839617,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649840769,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649840774,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649841133,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649841135,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649913519,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649913527,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649913791,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649914701,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649917612,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649917618,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649918758,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649918761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649922466,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649922471,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649923742,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649923747,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649924096,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649924098,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649930100,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649930105,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649930764,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649931692,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649932489,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649932495,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649932796,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649933688,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649935846,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649935854,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649936775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649936777,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649975164,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649975170,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649976482,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649976493,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649976790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649977687,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649979735,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649979739,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649980767,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649980769,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649982936,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649982944,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649983779,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649983781,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649987534,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649987539,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649988816,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649988818,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649994066,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775649994072,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775649995788,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775649995790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650003386,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650003394,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650003764,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650003765,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650016399,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650016404,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650016674,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650017674,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650025076,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650025083,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650025749,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650026686,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650055096,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650055102,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650055753,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650056701,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650056708,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650057130,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650057683,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650060459,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650060465,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650060790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650061680,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650065217,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650065225,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650065802,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650066688,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650077156,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650077163,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650077965,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650078739,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650088322,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650088330,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650088777,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650089670,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650102145,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650102150,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650103747,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650103748,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650115200,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650115206,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650116750,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650116753,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650129859,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650129864,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650130767,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650131713,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650146748,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650146757,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650147801,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650147804,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650148754,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650148759,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650149784,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650149790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650151358,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650151363,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650151755,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650152694,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650165081,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650165086,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650165791,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650166696,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650168289,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650168296,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650168780,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650169697,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650171493,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650171501,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650172768,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650172770,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650237697,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650237702,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650238790,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650238792,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650241771,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650241779,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650242749,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650242750,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650251108,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650251117,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650252830,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650252832,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650284580,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650284588,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650285964,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650285973,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650286286,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650286294,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650287846,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650287851,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650288777,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650288779,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650291209,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650291213,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650292508,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650292514,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650292775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650292777,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650295365,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650295372,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650296801,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650296802,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650391821,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650391831,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650392818,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650392820,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650394507,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650394512,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650395761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650395763,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650396457,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650396461,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650396774,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650396776,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650399034,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650399039,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650399748,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650399750,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650406735,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650406743,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650407778,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650407779,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650470909,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650470914,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650471772,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650472705,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650474464,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650474472,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650474775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650475700,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650477846,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650477852,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650478775,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650479707,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650482094,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650482102,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650482761,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650483697,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650484812,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650484821,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650485805,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650485807,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650525163,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775650525168,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775650525836,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650526702,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775650529820,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775655021289,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775707573395,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775707573406,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775707666845,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708013636,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708016168,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708160607,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708167504,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708176340,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708179604,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708183780,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708241734,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708278331,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708286397,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708288521,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708291751,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708294224,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708303264,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708318559,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708336755,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708337712,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708346313,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708347685,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708350810,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708385322,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708389377,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708427492,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708501106,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708502581,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708511648,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708517878,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708520201,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708555940,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708563380,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708577215,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708583829,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708593988,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708594967,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708610800,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708612679,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708635849,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708637449,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708638023,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708641381,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708676510,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708678653,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708694969,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708696679,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708702774,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775708705121,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775723331377,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"info","time":1775723459296,"name":"Redis","msg":"Cache not found: devteam_7071:priti_9943"}
+{"level":"error","time":1775800239459,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800239467,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800239522,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800239523,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800239634,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800239636,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800239792,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800239793,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800240000,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800240002,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800240253,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800240254,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800240574,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800240575,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800240942,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800240943,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800241350,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800241351,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800241811,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800241812,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800242322,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800242323,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800242880,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800242882,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800243499,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800243500,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800244155,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800244156,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800244858,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800244859,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800245616,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800245618,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800246433,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800246435,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800247293,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800247295,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800248203,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800248204,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800249162,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800249163,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800250172,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800250175,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800251227,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800251229,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800252343,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800252345,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800253497,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800253498,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800254703,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800254704,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800255968,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800255969,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800257285,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800257286,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800258648,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800258657,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800279376,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800279437,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800279442,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800279551,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800279553,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800279706,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800279708,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800279916,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800279917,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800280171,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800280172,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800280488,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800280489,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800280854,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800280855,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800281265,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800281266,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800281725,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800281726,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800282229,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800282230,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800282783,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800282784,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800283393,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800283395,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800284048,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800284049,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800284763,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800284763,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800285526,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800285528,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800286338,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800286341,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800287208,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800287209,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800288125,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800288127,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800289091,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800289094,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800290107,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800290110,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800291171,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800291173,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800292289,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800292291,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800293456,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800293457,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800294665,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800294668,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800295925,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800295927,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800297235,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800297237,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800298592,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800298592,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800300002,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800300003,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800301456,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800301457,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800302971,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800324739,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800324798,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800324802,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800324909,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800324920,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800325083,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800325088,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800325298,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800325299,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800325553,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800325554,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800325867,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800325872,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800326227,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800326228,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800326643,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800326644,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800327100,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800327101,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800327617,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800327619,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800328184,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800328185,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800328800,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800328801,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800329460,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800329463,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800330168,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800330169,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800330925,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800330927,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800331738,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800331740,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800332601,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800332603,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800333511,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800333512,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800334479,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800334480,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800335486,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800335488,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800336544,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800336545,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800337648,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800337649,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800338806,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800338807,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"error","time":1775800340021,"name":"Redis","msg":"REDIS ERROR: connect ECONNREFUSED 127.0.0.1:6379"}
+{"level":"info","time":1775800340022,"name":"Redis","msg":"REDIS CONNECTION CLOSED"}
+{"level":"info","time":1775800341278,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800584186,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800584198,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800595830,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800595842,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800597613,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800597621,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800611276,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800611291,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800812466,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800812482,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800818375,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800818386,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775800953395,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775800953411,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801030647,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801030658,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801040654,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801040668,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801042960,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801042973,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801045146,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801045160,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801053884,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801053900,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801061180,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801061192,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801068119,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801068131,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801073303,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801073316,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801076347,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801076360,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801228576,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801228589,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801233400,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801233413,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801250346,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801250360,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801257258,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801257273,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801261675,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801261691,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801263952,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801263966,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801300694,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801300707,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801317235,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801317249,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801334310,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801334323,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801338529,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801338542,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801347565,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801347578,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801353015,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801353029,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801405362,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801405375,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801406624,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801406637,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801539188,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801539200,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801706489,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801706509,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801710930,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801710942,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801715196,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801715211,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801731754,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801731771,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801735279,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801735295,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801736203,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801736219,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801740918,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801740936,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801796165,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801796177,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801818006,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801818020,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801820271,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801820283,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801859712,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801859727,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801861775,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801861790,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801874738,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801874757,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801887940,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801887956,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801889964,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801889976,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801895609,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801895622,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801903454,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801903467,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801907403,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801907414,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801930729,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801930743,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801939775,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801939791,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801943360,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801943372,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801984364,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801984380,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775801993502,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775801993518,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802001015,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802001029,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802018708,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802018722,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802027801,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802027811,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802029386,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802029401,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802043558,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802043570,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802046025,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802046037,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802050004,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802050016,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802052187,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802052202,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802053206,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802053224,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802097630,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802097644,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802100598,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802100611,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802114927,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802114943,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802124156,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802124170,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802141138,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802141159,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802143092,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802143104,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802189974,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802189992,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802202302,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802202317,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802208039,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802208051,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802211615,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802211636,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802283943,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802283956,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802289456,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802289468,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802298889,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802298903,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802313042,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802313054,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802318643,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802318657,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802319829,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802319841,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802329025,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802329037,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802331555,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802331563,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802333048,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802333060,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802335793,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802335806,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802356772,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802356784,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802472392,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802472404,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802474930,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802474942,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802587281,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802587289,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802598237,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802598245,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802602045,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802602060,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802626705,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802626715,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802628973,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802628985,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802638269,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802638281,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802639983,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802639997,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802641368,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802641385,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802650883,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802650898,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802653106,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802653123,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802655926,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802655943,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802660825,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802660838,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802661940,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802661953,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802662932,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802662947,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802753184,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802753198,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802761894,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802761907,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802764034,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802764046,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802817311,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802817324,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802821149,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802821161,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802823042,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802823056,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802842093,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802842102,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775802843553,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775802843566,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1775803014730,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1775803014737,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
