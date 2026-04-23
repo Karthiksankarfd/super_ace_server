@@ -5,7 +5,7 @@
       "isWinPresent": true,
       "scatterFormed": false,
       "wildFormed" : "LITTLE-JOKER-WILD",
-      "actualWildCards": "--NO-OF-LOCKED-CARDS",
+      "actualWildCardsCount": "--NO-OF-LOCKED-CARDS",
       "extraWildTriggeredByBigJokerWild" : 0,
       "comboMultiplierLevel": 1,
       "totalWin":20,

@@ -41,7 +41,6 @@ export default class Grid {
     };
 
     generatePartial(grid: any, winWays: []) {
-        
         let replacedCards = new Map();
         let replacementCards = []
         for (let i = 0; i < winWays.length; i++) {
@@ -296,13 +295,14 @@ export default class Grid {
     }
 
     bigJokerWild(grid: any) {
-        let cellsFlipedToWild = []
-        let noOfSymbolsToReplace = Math.floor(Math.random() * 4) + 1;
-        console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAS BEEN CREATED-----------", noOfSymbolsToReplace));
+        let extraWildTriggeredByBigJokerWild = []
+        let extraWildsCreated = Math.floor(Math.random() * 4) + 1;
+        let extraWildTriggeredByBigJokerWildCount = extraWildsCreated ;
+        console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAS BEEN CREATED-----------", extraWildsCreated));
 
         let newGrid = structuredClone(grid)
 
-        while (noOfSymbolsToReplace > 0) {
+        while (extraWildsCreated > 0) {
 
             // only from col 2 to 5 that means 1st index to 4th index hasbe replaced
             let col = Math.floor(Math.random() * 4) + 1;
@@ -315,7 +315,7 @@ export default class Grid {
 
                 newGrid[col][row].name = "BIG-JOKER-WILD"
                 newGrid[col][row].isGolden = false
-                cellsFlipedToWild.push(
+                extraWildTriggeredByBigJokerWild.push(
                     {
 
                     insertAt: [col, row],
@@ -328,27 +328,40 @@ export default class Grid {
 
             };
 
-            noOfSymbolsToReplace--
+            extraWildsCreated--
         };
-        console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAPPENED DUE TO THE BIG-JOKER-WILD-----------", cellsFlipedToWild.length));
-        return { cellsFlipedToWild, newGrid };
+        console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAPPENED DUE TO THE BIG-JOKER-WILD-----------", extraWildTriggeredByBigJokerWild.length));
+        return { extraWildTriggeredByBigJokerWild, newGrid , extraWildTriggeredByBigJokerWildCount };
     }
 
     handleGoldenCards(goldenCards: [], grid: any) {
         let { goldenToWild, wildType } = reelService.flipGoldenCard(goldenCards);
         let result = {
-            cardsFlipedToWild: [],
-            wildType: ""
+            actualWildCardsCount : goldenCards.length,
+            actualWildCards:[...goldenCards],
+            extraWildTriggeredByBigJokerWildCount : 0,
+            extraWildTriggeredByBigJokerWild :[],
+            wildFormed : wildType,
+            cardsFlipedToWild: goldenToWild,
         };
         if (wildType === "BIG-JOKER-WILD") {
             // replace the cards in the grid
             let modGrid = this.replaceCardsInGrid(grid, goldenToWild);
-            // flip randon cells from col 2 to 5 
-            let d = this.bigJokerWild(modGrid);
-            return { ...result, cardsFlipedToWild: goldenToWild, wildType, grid: d.newGrid, bigWildSubcards: d.cellsFlipedToWild }} 
+
+            let { extraWildTriggeredByBigJokerWild, newGrid , extraWildTriggeredByBigJokerWildCount} = this.bigJokerWild(modGrid);
+            return { 
+                ...result, 
+                grid: newGrid, 
+                extraWildTriggeredByBigJokerWild , 
+                extraWildTriggeredByBigJokerWildCount,
+             }} 
+
             else {
             let littleWildGrid = this.littleJokerWild(grid, goldenToWild)
-            return { ...result, cardsFlipedToWild: goldenToWild, wildType, grid :littleWildGrid, bigWildSubcards: null }
+            return { ...result, 
+                grid :littleWildGrid, 
+                bigWildSubcards: null 
+            }
         }
     };
 
@@ -401,7 +414,14 @@ export default class Grid {
         let totalWin = 0 ;
 
         while (hasWin) {
-            let result: any = {};
+            let result: any = {
+                    actualWildCardsCount:0,
+                    actualWildCards:[],
+                    extraWildTriggeredByBigJokerWildCount:0,
+                    extraWildTriggeredByBigJokerWild:[],
+                    wildFormed:"NO WILD FORMED",
+                    cardsFlipedToWild:[]
+            };
 
             let { mg, goldenCards, goldenMap, scatters } = this.mapTheGrid(currentGrid);
             let hasScatter =  scatters.length >= 3 ;
@@ -420,21 +440,33 @@ export default class Grid {
 
             let replacementCards = this.generatePartial(result.reelWindowBeforeEvaluation, result.winningCards);
             let goldenWinnigCards = evaluationResult.get("lockedCards");
-     
-            result.isGoldenCardsPresentInWinWays = goldenWinnigCards.length > 0;
+            let hasGodldenCards = goldenWinnigCards.length > 0 ;
 
+            result.isGoldenCardsPresentInWinWays = goldenWinnigCards.length > 0;
             result.isWinPresent = hasWin ;
             result.scatterFormed = hasScatter ;
             result.replacementCards = replacementCards;
-
             let modifiedGrid = structuredClone(this.replaceCardsInGrid(currentGrid, replacementCards));
-            
             result.reelWindowAfterEvaluation = modifiedGrid ;
 
             let wildFlipedGrid ;
-            if (goldenWinnigCards.length > 0) {
-                let { grid } = gridService.handleGoldenCards(goldenWinnigCards, modifiedGrid);
-                wildFlipedGrid = structuredClone(grid);
+            if (hasGodldenCards) {
+                let { 
+                    grid , 
+                    actualWildCardsCount,
+                    actualWildCards,
+                    extraWildTriggeredByBigJokerWildCount,
+                    extraWildTriggeredByBigJokerWild,
+                    wildFormed,
+                    cardsFlipedToWild
+                } = gridService.handleGoldenCards(goldenWinnigCards, modifiedGrid);
+                    result.actualWildCardsCount = actualWildCardsCount,
+                    result.actualWildCards = actualWildCards,
+                    result.extraWildTriggeredByBigJokerWildCount = extraWildTriggeredByBigJokerWildCount,
+                    result.extraWildTriggeredByBigJokerWild =  extraWildTriggeredByBigJokerWild,
+                    result.wildFormed = wildFormed,
+                    result.cardsFlipedToWild = cardsFlipedToWild
+                    wildFlipedGrid = structuredClone(grid);
             } else{
                 // console.log(chalk.red("----------NO GOLDEN CARDS PRESENT IN THE CURRENT GRID THAT HAS TO BE FLIPPED---------"))
                 wildFlipedGrid = structuredClone(modifiedGrid);
