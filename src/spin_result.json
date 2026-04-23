@@ -1,0 +1,130 @@
+{
+  "r": [
+    {
+      "isGoldenCardsPresentInWinWays": true,
+      "isWinPresent": true,
+      "scatterFormed": false,
+      "wildFormed" : "LITTLE-JOKER-WILD",
+      "actualWildCards": "--NO-OF-LOCKED-CARDS",
+      "extraWildTriggeredByBigJokerWild" : 0,
+      "comboMultiplierLevel": 1,
+      "totalWin":20,
+      "wins": [
+        { "win": "FIVE-OF-KIND", "char": "ACE", "ways": 2, "payout": 200 },
+        { "win": "THREE-OF-KIND", "char": "DIAMOND", "ways": 1, "payout": 2 }
+      ],
+      "reelWindowBeforeEvaluation": [
+        [
+          { "name": "QUEEN", "isGolden": false },
+          { "name": "ACE", "isGolden": false },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "ACE", "isGolden": false }
+        ],
+        [
+          { "name": "SPADE", "isGolden": false },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "ACE", "isGolden": false },
+          { "name": "KING", "isGolden": true }
+        ],
+        [
+          { "name": "SPADE", "isGolden": true },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "ACE", "isGolden": false }
+        ],
+        [
+          { "name": "SCATTER", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "ACE", "isGolden": true },
+          { "name": "JOKER", "isGolden": false }
+        ],
+        [
+          { "name": "JOKER", "isGolden": false },
+          { "name": "SCATTER", "isGolden": false },
+          { "name": "ACE", "isGolden": false },
+          { "name": "QUEEN", "isGolden": false }
+        ]
+      ],
+      "winningCards": [
+        [0,1],[0,3],[1,2],[2,3],[3,2],[4,2],
+        [0,2],[1,1],[2,1]
+      ],
+      "replacementCards": [
+        { "insertAt": [0,1], "card": { "name": "DIAMOND", "isGolden": false } },
+        { "insertAt": [0,3], "card": { "name": "QUEEN", "isGolden": false } },
+        { "insertAt": [1,2], "card": { "name": "SPADE", "isGolden": false } },
+        { "insertAt": [2,3], "card": { "name": "ACE", "isGolden": false } },
+        { "insertAt": [4,2], "card": { "name": "CLUBS", "isGolden": false } },
+        { "insertAt": [0,2], "card": { "name": "DIAMOND", "isGolden": false } },
+        { "insertAt": [1,1], "card": { "name": "ACE", "isGolden": false } },
+        { "insertAt": [2,1], "card": { "name": "ACE", "isGolden": false } }
+      ],
+      "reelWindowAfterEvaluation": [
+        [
+          { "name": "QUEEN", "isGolden": false },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "QUEEN", "isGolden": false }
+        ],
+        [
+          { "name": "SPADE", "isGolden": false },
+          { "name": "ACE", "isGolden": false },
+          { "name": "SPADE", "isGolden": false },
+          { "name": "KING", "isGolden": true }
+        ],
+        [
+          { "name": "SPADE", "isGolden": true },
+          { "name": "ACE", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "ACE", "isGolden": false }
+        ],
+        [
+          { "name": "SCATTER", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "ACE", "isGolden": true },
+          { "name": "JOKER", "isGolden": false }
+        ],
+        [
+          { "name": "JOKER", "isGolden": false },
+          { "name": "SCATTER", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "QUEEN", "isGolden": false }
+        ]
+      ],
+      "reelWindowAfterWildFlip": [
+        [
+          { "name": "QUEEN", "isGolden": false },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "DIAMOND", "isGolden": false },
+          { "name": "QUEEN", "isGolden": false }
+        ],
+        [
+          { "name": "BIG-JOKER-WILD", "isGolden": false },
+          { "name": "ACE", "isGolden": false },
+          { "name": "SPADE", "isGolden": false },
+          { "name": "KING", "isGolden": true }
+        ],
+        [
+          { "name": "BIG-JOKER-WILD", "isGolden": false },
+          { "name": "ACE", "isGolden": false },
+          { "name": "BIG-JOKER-WILD", "isGolden": false },
+          { "name": "ACE", "isGolden": false }
+        ],
+        [
+          { "name": "SCATTER", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "BIG-JOKER-WILD", "isGolden": false },
+          { "name": "JOKER", "isGolden": false }
+        ],
+        [
+          { "name": "JOKER", "isGolden": false },
+          { "name": "SCATTER", "isGolden": false },
+          { "name": "CLUBS", "isGolden": false },
+          { "name": "BIG-JOKER-WILD", "isGolden": false }
+        ]
+      ]
+    }
+  ],
+  "triggerScatter": true,
+  "totalWin": 0
+}

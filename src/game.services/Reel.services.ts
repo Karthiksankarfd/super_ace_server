@@ -24,7 +24,6 @@ class Reel {
             reel.push(reelToUse![index]!);
         }
 
-        console.log(reel, "The current Reel", stopIndex, n);
         return reel;
     }
 
@@ -33,12 +32,15 @@ class Reel {
         return this.symbolReelNoGolden[index] ;
     }
 
-    flipGoldenCard(goldenCards: Array<Array<number>>){
+    flipGoldenCard(goldenCards: Array<Array<number>>):any{
+        if(!goldenCards.length){
+            return [];
+        }
         let bigOrSmall = "" ; 
-        let result = [];
+        let goldenToWild = [] ;
         for(let i = 0 ; i < goldenCards.length ; i++ ){
             let index = Math.floor(Math.random() * this.wildReel.length);
-            let card = this.wildReel[index];
+            let card = this.wildReel[index]; // todo : optimize 
             if(bigOrSmall === ""){
                 if(card.name === "BIG-JOKER-WILD"){
                     bigOrSmall = "BIG-JOKER-WILD"
@@ -52,10 +54,10 @@ class Reel {
                 insertAt :goldenCards[i] ,
                 card
             }
-            result.push(data)
+            goldenToWild.push(data)
         }
-        return result ;
-    }
+        return { goldenToWild , wildType: bigOrSmall } ;
+    };
     
 }
 

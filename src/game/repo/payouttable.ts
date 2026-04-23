@@ -6,7 +6,7 @@ export enum AllowedWins {
 };
 
 export const  payout = {
-    ACE : {
+    "ACE" : {
         "FIVE-OF-KIND" : {
             multiplier : 5
         },
@@ -17,7 +17,7 @@ export const  payout = {
             multiplier : 1
         },
     },
-    KING : {
+    "KING" : {
         "FIVE-OF-KIND" : {
             multiplier : 4
         },
@@ -28,7 +28,7 @@ export const  payout = {
             multiplier : 0.8
         },
     },
-    QUEEN : {
+    "QUEEN" : {
         "FIVE-OF-KIND" : {
             multiplier : 3
         },
@@ -39,7 +39,7 @@ export const  payout = {
             multiplier : 0.6
         },  
     },
-    JOKER : {
+    "JOKER" : {
         "FIVE-OF-KIND" : {
             multiplier : 2
         },
@@ -50,7 +50,7 @@ export const  payout = {
             multiplier : 0.4
         },
     },
-    SPADE : {
+    "SPADE" : {
         "FIVE-OF-KIND" : {
             multiplier : 1
         },
@@ -61,7 +61,7 @@ export const  payout = {
             multiplier : 0.2
         },
     },
-    HEART : {
+    "HEART" : {
         "FIVE-OF-KIND" : {
             multiplier : 1
         },
@@ -72,7 +72,7 @@ export const  payout = {
             multiplier : 0.2
         },
     },
-    DIAMOND : {
+    "DIAMOND" : {
         "FIVE-OF-KIND" : {
             multiplier : 0.5
         },
@@ -83,7 +83,7 @@ export const  payout = {
             multiplier : 0.1
         },
     },
-    CLUBS : {
+    "CLUBS" : {
         "FIVE-OF-KIND" : {
             multiplier : 0.5
         },
@@ -93,6 +93,5 @@ export const  payout = {
         "THREE-OF-KIND" : {
             multiplier : 0.1
         },
-    },
-    
+    }, 
 }

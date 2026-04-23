@@ -35,77 +35,77 @@ type Card = {
 //     { suite: "8", isGoldCard: true }
 //   ]
 // ];
-export default class Game{
+// export default class Game{
 
-    constructor(){};
+//     constructor(){};
 
-    spin(){
-        let result = gridService.generateGrid()
-        return result
-    };
+//     spin(){
+//         let result = gridService.generateGrid()
+//         return result
+//     };
 
-    // evaluate(reelOne: Array<string>, mappedGrid: Map<string, Map<string, Array<Array<number>>>>) {
-    //     let winMap = new Map();
-    //     console.log("Inside the evaluator")
-    //     // take an base from the reel 
-    //     let cols = ["col1map", "col2map", "col3map", "col4map", "col5map"];
-    //     for (let i = 0; i < reelOne.length; i++) {    
-    //         let base = reelOne[i];
-    //         let currentCol = 1
-    //         let match = 1
-    //         let win_details = {
-    //             win: "",
-    //             char: ""
-    //         }
-    //         while (currentCol < 5) {
-    //             let col = mappedGrid.get(cols[currentCol]!)
-    //             if (col && base !== "") {
-    //                 if (col.has(base!)) {
-    //                     match++;
-    //                     currentCol++;
-    //                 } else if (match > 4) {
-    //                     win_details.win = "FIVE-OF-KIND",
-    //                     win_details.char = base!
-    //                 } else {
-    //                     if (match < 3) {
-    //                         currentCol++
-    //                         break;
-    //                     } else {
-    //                         if (match === 3) {
-    //                             win_details.win = "THREE-OF-KIND",
-    //                                 win_details.char = base!
-    //                         } else if (match === 4) {
-    //                             win_details.win = "FOUR-OF-KIND",
-    //                                 win_details.char = base!
-    //                         }
-    //                         winMap.set(base, win_details);
-    //                         currentCol++
-    //                         break;
-    //                     }
-    //                 }
-    //             }else{
-    //               console.log("THE REQUIRED PARAMS FOR EVALUATION ARE NOT PRESENT")
-    //             }
-    //         }
-    //     }
-    //     return winMap;
-    // }
+//     // evaluate(reelOne: Array<string>, mappedGrid: Map<string, Map<string, Array<Array<number>>>>) {
+//     //     let winMap = new Map();
+//     //     console.log("Inside the evaluator")
+//     //     // take an base from the reel 
+//     //     let cols = ["col1map", "col2map", "col3map", "col4map", "col5map"];
+//     //     for (let i = 0; i < reelOne.length; i++) {    
+//     //         let base = reelOne[i];
+//     //         let currentCol = 1
+//     //         let match = 1
+//     //         let win_details = {
+//     //             win: "",
+//     //             char: ""
+//     //         }
+//     //         while (currentCol < 5) {
+//     //             let col = mappedGrid.get(cols[currentCol]!)
+//     //             if (col && base !== "") {
+//     //                 if (col.has(base!)) {
+//     //                     match++;
+//     //                     currentCol++;
+//     //                 } else if (match > 4) {
+//     //                     win_details.win = "FIVE-OF-KIND",
+//     //                     win_details.char = base!
+//     //                 } else {
+//     //                     if (match < 3) {
+//     //                         currentCol++
+//     //                         break;
+//     //                     } else {
+//     //                         if (match === 3) {
+//     //                             win_details.win = "THREE-OF-KIND",
+//     //                                 win_details.char = base!
+//     //                         } else if (match === 4) {
+//     //                             win_details.win = "FOUR-OF-KIND",
+//     //                                 win_details.char = base!
+//     //                         }
+//     //                         winMap.set(base, win_details);
+//     //                         currentCol++
+//     //                         break;
+//     //                     }
+//     //                 }
+//     //             }else{
+//     //               console.log("THE REQUIRED PARAMS FOR EVALUATION ARE NOT PRESENT")
+//     //             }
+//     //         }
+//     //     }
+//     //     return winMap;
+//     // }
 
-    generatePartial(){};
+//     generatePartial(){};
 
-    espin(){ // how can you make the domain to tell this has happend ??
-        let isWin = false ;
-        let isWinHasGoldenCards = false ;
-        do{
-           let result = gridService.generateGrid() ;
-           isWin = result.wins.get("win_matrix").length > 0 ;
-           isWinHasGoldenCards = result.wins.get("lockedCards").length > 0 ;
-           if(isWinHasGoldenCards){
-               let win_co_ordinates = result.wins.get("win_matrix")
-               let replaceMentCards = gridService.generatePartial(result.grid , win_co_ordinates) ; 
-           }
-        }while(isWin) ;
-    };
+//     espin(){ // how can you make the domain to tell this has happend ??
+//         let isWin = false ;
+//         let isWinHasGoldenCards = false ;
+//         do{
+//            let result = gridService.generateGrid() ;
+//            isWin = result.wins.get("win_matrix").length > 0 ;
+//            isWinHasGoldenCards = result.wins.get("lockedCards").length > 0 ;
+//            if(isWinHasGoldenCards){
+//                let win_co_ordinates = result.wins.get("win_matrix")
+//                let replaceMentCards = gridService.generatePartial(result.grid , win_co_ordinates) ; 
+//            }
+//         }while(isWin) ;
+//     };
 
-};
+// };
 
