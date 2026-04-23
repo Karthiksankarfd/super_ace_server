@@ -70,14 +70,12 @@ export const initializeSocket = (io: Server) => {
 
         socket.on("spin", (betData) => {
             console.log(chalk.bgGreen("--------------------------THE SPIN CYCLE HAS STARTED---------------------------"));
-            let multiplier = 1;
-            let scatterHappendInthisSpinCycle = 0 ;
-            let freeSpins = 10 ;
-            let scatterSpins = 0 ;
             let grid =  gridService.generateGrid()
+            console.log("This the root window " , grid)
             let spinResult = gridService.spin(grid ,  betData.betAmount);
-            gridService.loggSpinResults(spinResult.r);
-            socket.emit("SPIN-CYCLE-RESULT" , spinResult );
+            let initialGridState = structuredClone(grid)
+            gridService.loggSpinResults(spinResult.cascades);
+            socket.emit("SPIN-CYCLE-RESULT" , { initialGridState, ...spinResult } );
             console.log(chalk.bgRed("|--------------------------THE SPIN CYCLE HAS ENDED---------------------------|"));
         });
 
