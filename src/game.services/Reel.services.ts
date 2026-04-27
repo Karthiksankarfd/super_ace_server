@@ -1,6 +1,7 @@
 import mathservice from "./Math.services.js"
 import { weightedSymbolReel, weightedSymbolReelNoGold, wildReel } from "../game/repo/reel.js"
 import { type Card } from "./Grid.services.js";
+import chalk from "chalk";
 
 class Reel {
     constructor(readonly symbolReel: Array<Card> , readonly symbolReelNoGolden: Array<Card> , readonly wildReel: Array<Card>) { }
@@ -38,7 +39,7 @@ class Reel {
         }
         let bigOrSmall = "" ; 
         let goldenToWild = [] ;
-        for(let i = 0 ; i < goldenCards.length ; i++ ){
+        for(let i = 0 ; i < goldenCards.length ; i++){
             let index = Math.floor(Math.random() * this.wildReel.length);
             let card = this.wildReel[index]; // todo : optimize 
             if(bigOrSmall === ""){
@@ -51,11 +52,14 @@ class Reel {
                 card.name = bigOrSmall
             }
             let data = {
-                insertAt :goldenCards[i] ,
+                insertAt :[...goldenCards[i]] , // ! 
                 card
             }
-            goldenToWild.push(data)
+            goldenToWild.push(data);
         }
+
+        console.log(chalk.yellowBright("-----------------------------------------------------------------------------------------------------------------------------------------------------THESE ARE THE FLIPED WILD CARDS--"))
+        console.table(goldenToWild)
         return { goldenToWild , wildType: bigOrSmall } ;
     };
     

@@ -23,7 +23,6 @@ export const generateUUIDv7 = (): string => {
 
 export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise<WebhookData | false> => {
 
-
     try {
         let {
             id,
@@ -31,16 +30,16 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
             balance,
             game_state,
             socketId,
-            bet_amount,
+            betAmount,
             hand_type,
             roundId
         } = user
 
-        const amountFormatted = bet_amount.toFixed(2);
+        const amountFormatted = betAmount.toFixed(2);
 
         let baseData: WebhookData = {
             txn_id: generateUUIDv7(),
-            roundId,
+            roundId: roundId || "superaceTestRoundID",
             game_id : 11,
             user_id: decodeURIComponent(id)
         };
@@ -48,7 +47,7 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
             return {
                 ...baseData,
                 amount: amountFormatted,
-                description: `${bet_amount.toFixed(2)} debited for Video Poker game for Round ${id}`,
+                description: `${betAmount.toFixed(2)} debited for Super Ace game for Round ${id}`,
                 roundId,
                 txn_type: 0
             }
@@ -56,15 +55,14 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
         } else if (key === "CREDIT") {
             return {
                 ...baseData,
-                amount: bet_amount,
+                amount: betAmount,
                 txn_ref_id: baseData.txn_id,
-                description: `${bet_amount} credited for VideoPoker ${roundId}`,
+                description: `${betAmount} credited for Super Ace ${roundId}`,
                 txn_type: 1
             }
         }
 
         else return baseData;
-
 
     } catch (err) {
         console.error(`[ERR] while trying to prepare data for webhook is::`, err);
