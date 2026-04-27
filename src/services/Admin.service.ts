@@ -3,6 +3,7 @@ import crypto from 'crypto';
 import { sendToQueue } from '../utils/amqp';
 import { createLogger } from '../utils/logger';
 import type { AccountsResult, BetsData, PlayerDetails, WebhookData, WebhookKey } from "../interfaces/appInterfaces.ts"
+import chalk from 'chalk';
 const thirdPartyLogger = createLogger('ThirdPartyRequest', 'jsonl');
 const failedThirdPartyLogger = createLogger('FailedThirdPartyRequest', 'jsonl');
 
@@ -28,10 +29,9 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
             id,
             operatorId,
             balance,
-            game_state,
             socketId,
             betAmount,
-            hand_type,
+            winAmount,
             roundId
         } = user
 
@@ -55,7 +55,7 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
         } else if (key === "CREDIT") {
             return {
                 ...baseData,
-                amount: betAmount,
+                amount: winAmount,
                 txn_ref_id: baseData.txn_id,
                 description: `${betAmount} credited for Super Ace ${roundId}`,
                 txn_type: 1
@@ -115,13 +115,16 @@ export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Pro
 
         if (key === 'CREDIT') {
             await sendToQueue('', 'games_cashout', JSON.stringify({ ...webhookData, operatorId: user.operatorId, token: user.token }));
+            console.log(chalk.red(`the amount rupees ${webhookData.amount} is sent to queue and will be credited to the user account` ))
             return { status: true, type: key };
         };
 
         user.txn_id = webhookData.txn_id;
         const sendRequest = await sendRequestToAccounts(webhookData, user?.token);
+        console.log(sendRequest)
         if (!sendRequest) return { status: false, type: key };
         console.log("after sendRequest");
+         
 
         return { status: true, type: key, txn_id: user.txn_id };
     } catch (err) {

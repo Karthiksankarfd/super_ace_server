@@ -5,7 +5,7 @@
     "build": "tsc",
     "start": "tsx dist/index.js"
   },
-"devDependencies": {
+  "devDependencies": {
     "@types/amqplib": "^0.10.8",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
@@ -24,9 +24,10 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "ioredis": "^5.9.2",
+    "ioredis": "^5.10.1",
     "mysql2": "^3.16.1",
     "pino": "^10.2.0",
+    "redis": "^5.12.1",
     "socket.io": "^4.8.3"
   }
 }

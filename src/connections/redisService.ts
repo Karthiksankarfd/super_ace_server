@@ -90,9 +90,9 @@ export const setCache = async (key: string, value: string, expiration: number = 
     }
 };
 
-export const getCache = async (key: string): Promise<string | null> => {
+export const getCache = async (key: string): Promise<string | null > => {
     if (!redisClient) redisClient = await initializeRedis();
-
+    
     try {
         const value = await redisClient.get(key);
         if (value) {

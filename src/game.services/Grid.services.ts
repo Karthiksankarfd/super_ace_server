@@ -159,7 +159,6 @@ export default class Grid {
                             cardPresent = base;
                             win_matrix = [...win_matrix, ...col?.get(cardPresent)!];
                         }
-
                         // if its wild and seenWilds dont have the value add to win_matrix
                         if (!seenWilds.has(setValue) && (cardPresent === "BIG-JOKER-WILD" || cardPresent === "LITTLE-JOKER-WILD")) {
                             win_matrix = [...win_matrix, ...col?.get(cardPresent)!];
