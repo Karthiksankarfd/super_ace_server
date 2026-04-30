@@ -24,6 +24,15 @@ export const connect = async (): Promise<void> => {
 
         const connection = await amqp.connect(AMQP_CONNECTION_STRING);
 
+        connection.on("error", (err) => {
+           console.error("RabbitMQ connection error:", err);
+        });
+
+        connection.on("close", () => {
+        console.warn("RabbitMQ connection closed. Reconnecting...");
+        // trigger reconnect logic
+        });
+
         rabbitMQLogger.info('✅ Rabbit MQ Connection is ready');
 
         [pubChannel, subChannel] = await Promise.all([
