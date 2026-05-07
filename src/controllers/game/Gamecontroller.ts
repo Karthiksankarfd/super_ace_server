@@ -85,7 +85,7 @@ class Gamecontroller {
 
   // before spin validate the bet data and deduct 
   // redis will the place which will have the updated user data 
-  private async validdateSpin(req: Request, res: Response, next: NextFunction) {
+  async validdateSpin(req: Request, res: Response, next: NextFunction) {
     // each spin will have the spinId that is unique for each spin request 
     const { betAmount, operatorId, id, user_id, game_id, token, minimumBet, maximumBet, spinId } = req.body;
     let playerData = await getCache(user_id);
