@@ -22,7 +22,7 @@ class Gamecontroller {
 
     const { token, game_id } = req.body;
     console.log(token)
-    
+
     if( !token || !game_id){
           return next("Token or game id is missing")
     }
@@ -97,6 +97,11 @@ class Gamecontroller {
   async validdateSpin(req: Request, res: Response, next: NextFunction) {
     // each spin will have the spinId that is unique for each spin request 
     const { betAmount, operatorId, id, user_id, game_id, token, minimumBet, maximumBet, spinId } = req.body;
+
+    if(!token || !game_id || !betAmount  || !user_id || !minimumBet || !maximumBet ){
+          return next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
+    };
+
     let playerData = await getCache(user_id);
     console.log(chalk.redBright("PLAYER DETAILS FROM CACHE"));
     console.log(playerData);
@@ -109,7 +114,6 @@ class Gamecontroller {
     let spinIdCacheKey = `spinId_${user_id}-${Date.now()}`;
     let isSpinCachePresent = await getCache(`${user_id}-spinId`);
 
-    console.log(chalk.magenta("THE SPINID PRESENT IN CAHCE", isSpinCachePresent));
     
     if (isSpinCachePresent) {
       return res.status(202).json({ msg: "Cannot place another spin request while previous is in progress" })
