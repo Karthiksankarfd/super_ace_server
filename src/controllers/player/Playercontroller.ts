@@ -1,15 +1,18 @@
 import { setCache } from "../../connections/redisService.js";
 import { getUserDataFromSource } from "../../services/userInfo.js";
-import { Request , Response } from "express";
+import { NextFunction, Request , Response } from "express";
 import crypto from "crypto"
 import chalk from "chalk";
 
 class playercontroller{
 
-    async getPlayerDetails (req : Request , res : Response){
+    async getPlayerDetails (req : Request , res : Response , next:NextFunction){
 
        const { token ,  game_id } = req.body ;
          
+       if(!token || game_id){
+          return next("Token or game id is missing")
+       }
          // check cache has the vlaue sessionID value 
          // if present send those data else getUser from 
          // getting player from the admin source

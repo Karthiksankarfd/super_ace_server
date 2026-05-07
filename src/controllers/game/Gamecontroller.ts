@@ -18,11 +18,15 @@ const mysqlGameRepoServices = new MysqlGameRepoServices(pool);
 
 class Gamecontroller {
 
-  async initGameDetails(req: Request, res: Response) {
+  async initGameDetails(req: Request, res: Response, next: NextFunction) {
 
-    const { token, gameId} = req.body;
+    const { token, game_id , } = req.body;
 
-    let response = await getUserDataFromSource(token, gameId);
+    if(!token || game_id){
+          return next("Token or game id is missing")
+    }
+
+    let response = await getUserDataFromSource(token, game_id);
     console.log(response);
 
     if (response.status === false || !response?.user_id) {
@@ -57,7 +61,11 @@ class Gamecontroller {
 
     console.log(chalk.bgGreen("--------------------------THE SPIN CYCLE HAS STARTED---------------------------"));
 
-    const { betAmount, spinId, spinIdCacheKey , user_id } = req.body;
+    const { betAmount, spinId, spinIdCacheKey , user_id , game_id , token} = req.body;
+    
+    if(!token || !game_id || !betAmount || !spinIdCacheKey || !user_id){
+          return next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
+    }
     let grid = slotMachine.generateGrid();
     let scatterPhaseResultData: any = []
     let spinResult = slotMachine.spin(grid, betAmount);
