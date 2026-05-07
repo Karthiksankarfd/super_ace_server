@@ -2,13 +2,13 @@ import cors from "cors";
 import express, { ErrorRequestHandler } from "express";
 import { config } from "dotenv";
 import { createServer } from "node:http";
-import { createLogger } from "./utils/logger";
+import { createLogger } from "./utils/logger.js";
 import { Server as SocketIOServer } from "socket.io";
-import { initializeRedis } from "./connections/redisService";
-import playerRoutes from './routes/player';
-import spinRoute from "./routes/game.routes/spin";
-import historyRoute from "./routes/history"
-import initGame from "./routes/game.routes/initiate";
+import { initializeRedis } from "./connections/redisService.js";
+import playerRoutes from './routes/player.js';
+import spinRoute from "./routes/game.routes/spin.js";
+import historyRoute from "./routes/history.js"
+import initGame from "./routes/game.routes/initiate.js";
 import chalk from "chalk";
 config();
 const port = process.env.PORT || 5100;
