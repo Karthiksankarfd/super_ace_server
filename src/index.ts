@@ -41,6 +41,7 @@ const startServer = async () => {
 
         app.use(globalMiddleware);
         server.listen(port, () => {
+            
             logger.info(`Server running in http://localhost:${port}`);
         });
     } catch (error: any) {

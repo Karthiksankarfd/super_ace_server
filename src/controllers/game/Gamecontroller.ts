@@ -97,24 +97,27 @@ class Gamecontroller {
   async validdateSpin(req: Request, res: Response, next: NextFunction) {
     // each spin will have the spinId that is unique for each spin request 
     const { betAmount, operatorId, id, user_id, game_id, token, minimumBet, maximumBet, spinId } = req.body;
-
+    console.log("inside the validator 1")
     if(!token || !game_id || !betAmount  || !user_id || !minimumBet || !maximumBet ){
           next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
     };
+    console.log("inside the validator 2")
 
     let playerData = await getCache(user_id);
     console.log(chalk.redBright("PLAYER DETAILS FROM CACHE"));
     console.log(playerData);
     let parsedData;
 
+    console.log("inside the validator 3")
     if (playerData) {
       parsedData = { ...JSON.parse(playerData) }
     };
 
+    console.log("inside the validator 4")
     let spinIdCacheKey = `spinId_${user_id}_${Date.now()}`;
     let isSpinCachePresent = await getCache(`${user_id}_spinId`);
 
-    
+    console.log("inside the validator 5")
     if (isSpinCachePresent) {
       return res.status(202).json({ msg: "Cannot place another spin request while previous is in progress" })
     };
@@ -129,7 +132,7 @@ class Gamecontroller {
     if (!transactinStatus.status) {
       next("Failed to Debit Money from wallet please try again...")
     };
-
+ console.log("inside the validator 6")
     // ? store the spinId or reqId only if it passes all
     await setCache(user_id, JSON.stringify(parsedData));
     await setCache(`${user_id}_spinId`, spinIdCacheKey)

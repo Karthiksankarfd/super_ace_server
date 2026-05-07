@@ -10662,3 +10662,47 @@
 {"level":"info","time":1778154616550,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
 {"level":"info","time":1778154650052,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
 {"level":"info","time":1778154650115,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154651821,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154651925,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154837101,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154837166,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154868697,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778154868734,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778154872287,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778154872320,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778154873977,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778154874008,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778154875493,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778154875527,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778154877690,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778154877723,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778154919593,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154920127,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154923114,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154923215,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154927552,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154927616,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154932130,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154932196,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154942202,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154942269,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154943960,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154944030,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154946484,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154946556,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154948817,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154948882,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154952048,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154952113,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154953089,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154953194,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154955587,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154955655,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154957542,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154957605,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154960482,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154960619,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154966821,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154966886,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154969870,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154969942,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
