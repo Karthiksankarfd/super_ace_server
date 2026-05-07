@@ -111,8 +111,8 @@ class Gamecontroller {
       parsedData = { ...JSON.parse(playerData) }
     };
 
-    let spinIdCacheKey = `spinId_${user_id}-${Date.now()}`;
-    let isSpinCachePresent = await getCache(`${user_id}-spinId`);
+    let spinIdCacheKey = `spinId_${user_id}_${Date.now()}`;
+    let isSpinCachePresent = await getCache(`${user_id}_spinId`);
 
     
     if (isSpinCachePresent) {
@@ -132,7 +132,7 @@ class Gamecontroller {
 
     // ? store the spinId or reqId only if it passes all
     await setCache(user_id, JSON.stringify(parsedData));
-    await setCache(`${user_id}-spinId`, spinIdCacheKey)
+    await setCache(`${user_id}_spinId`, spinIdCacheKey)
     next();
   };
 
