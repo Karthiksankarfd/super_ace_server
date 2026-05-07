@@ -24,7 +24,7 @@ class Gamecontroller {
     console.log(token)
 
     if( !token || !game_id){
-          return next("Token or game id is missing")
+          next("Token or game id is missing")
     }
 
     let response = await getUserDataFromSource(token, game_id);
@@ -65,7 +65,7 @@ class Gamecontroller {
     const { betAmount, spinId, spinIdCacheKey , user_id , game_id , token} = req.body;
 
     if(!token || !game_id || !betAmount || !spinIdCacheKey || !user_id){
-          return next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
+          next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
     }
     let grid = slotMachine.generateGrid();
     let scatterPhaseResultData: any = []
@@ -99,7 +99,7 @@ class Gamecontroller {
     const { betAmount, operatorId, id, user_id, game_id, token, minimumBet, maximumBet, spinId } = req.body;
 
     if(!token || !game_id || !betAmount  || !user_id || !minimumBet || !maximumBet ){
-          return next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
+          next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
     };
 
     let playerData = await getCache(user_id);
@@ -127,7 +127,7 @@ class Gamecontroller {
     console.log(transactinStatus);
 
     if (!transactinStatus.status) {
-      return next(transactinStatus)
+      next("Failed to Debit Money from wallet please try again...")
     };
 
     // ? store the spinId or reqId only if it passes all
