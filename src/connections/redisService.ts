@@ -91,6 +91,7 @@ export const setCache = async (key: string, value: string, expiration: number = 
 };
 
 export const getCache = async (key: string): Promise<string | null > => {
+    
     if (!redisClient) redisClient = await initializeRedis();
     
     try {
@@ -104,7 +105,8 @@ export const getCache = async (key: string): Promise<string | null > => {
     } catch (err :any) {
         logger.error('Failed to get Cache: ', err.message);
         return null;
-    }
+    };
+
 };
 
 export const deleteCache = async (key: string): Promise<void> => {

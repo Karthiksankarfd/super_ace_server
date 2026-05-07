@@ -30,9 +30,9 @@ export default class Database {
         // create DB 
         console.log("CREATING CONNECTION")
         // const connection = await mysql.createConnection({ host: this.config.host, user: this.config.user, password: this.config.password });
-        // create DB if not exists
+        // // create DB if not exists
         // await connection.execute(`CREATE DATABASE IF NOT EXISTS ${this.config.database}`);
-        // switch DB (optional but OK)
+        // // switch DB (optional but OK)
         // await connection.query(`USE ${this.config.database}`);
 
         // create table
@@ -66,12 +66,7 @@ export default class Database {
                     enableKeepAlive: true,
                     keepAliveInitialDelay: 0,
                 })
-                // console.log({
-                //   totalConnections:,
-                //   freeConnections: pool.pool._freeConnections.length,
-                //   queuedRequests: pool.pool._connectionQueue.length,
-                // });   
-                // console.log(this.connection.pool._allConnections)
+
                 console.log(chalk.greenBright("DB CONNECTED"))
             } catch (err) {
                 console.log(chalk.redBright("DB CONNECTION FAILED"))

@@ -24,7 +24,7 @@ export type Card = {
     isGolden: boolean
 }
 
-export default class Grid {
+export default class SlotMachine {
 
     public constructor() {};
 
@@ -153,23 +153,24 @@ export default class Grid {
                         // true and true
                         if (col?.has("LITTLE-JOKER-WILD")) {
                             cardPresent = "LITTLE-JOKER-WILD"
+                            ways = ways * col?.get("LITTLE-JOKER-WILD")!.length;
                         } else if (col.has(cardPresent)) {
                             cardPresent = "BIG-JOKER-WILD";
+                            ways = ways * col?.get("BIG-JOKER-WILD")!.length;
                         } else {
                             cardPresent = base;
                             win_matrix = [...win_matrix, ...col?.get(cardPresent)!];
                         }
+
                         // if its wild and seenWilds dont have the value add to win_matrix
                         if (!seenWilds.has(setValue) && (cardPresent === "BIG-JOKER-WILD" || cardPresent === "LITTLE-JOKER-WILD")) {
                             win_matrix = [...win_matrix, ...col?.get(cardPresent)!];
                             seenWilds.add(setValue)
                             console.log(chalk.magentaBright("This wild has not seen beore", setValue))
                         }
-
                     }
                     else {
                         break;
-                        multiplierIndexPointer = 0;
                     }
                 }
             };
@@ -292,8 +293,8 @@ export default class Grid {
         let extraWildsCreated = Math.floor(Math.random() * 4) + 1;
         let extraWildTriggeredByBigJokerWildCount = extraWildsCreated;
 
-        console.log(chalk.bgRedBright("THE GRID RECIEVED INSIDE THE BIGK=JOKERWILD-------------------------------"))
-        console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAS BEEN CREATED-----------", extraWildsCreated));
+        // console.log(chalk.bgRedBright("THE GRID RECIEVED INSIDE THE BIGK=JOKERWILD-------------------------------"))
+        // console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAS BEEN CREATED-----------", extraWildsCreated));
 
         let newGrid = structuredClone(grid);
         while (extraWildsCreated > 0) {
@@ -307,17 +308,17 @@ export default class Grid {
             //row can go from 0th row to 3rd row
             let row = Math.floor(Math.random() * 4);
 
-            let setKey = `${col}${row}`
+            // let setKey = `${col}${row}`
 
-            console.log(chalk.red("THE FIRST COL OF THE GRID***********************************************************"));
+            // console.log(chalk.red("THE FIRST COL OF THE GRID***********************************************************"));
             // console.log(newGrid[0])
 
-            console.log(chalk.redBright(setKey) , "THE SRING REPRESNT THE COL AND ROW OF WILD HAS TO INSERTED")
+            // console.log(chalk.redBright(setKey) , "THE SRING REPRESNT THE COL AND ROW OF WILD HAS TO INSERTED")
             // only change the non SCATTER and non JOKER cards
             if (newGrid[col][row].name !== "SCATTER" && newGrid[col][row].name !== "JOKER" ) {
-                console.log("THIS CARD WILL BE REPLACED" , newGrid[col][row])
+                // console.log("THIS CARD WILL BE REPLACED" , newGrid[col][row])
                 // console.log(chalk.red("MANIPULATING THE GRID FROM NORMAL TO WILD" , col , row))
-                console.log(newGrid[0]);
+                // console.log(newGrid[0]);
                 let card = {name: "BIG-JOKER-WILD",  isGolden : false}
                 newGrid[col][row] = card
                 extraWildTriggeredByBigJokerWild.push(
@@ -331,14 +332,14 @@ export default class Grid {
             };
         };
 
-        console.log(chalk.yellowBright("**********************GRID AT THE END OF BIG JOKER RANDOM FLIP*************************************"))
-        console.log(newGrid)
-        console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAPPENED DUE TO THE BIG-JOKER-WILD-----------", extraWildTriggeredByBigJokerWild.length));
+        // console.log(chalk.yellowBright("**********************GRID AT THE END OF BIG JOKER RANDOM FLIP*************************************"))
+        // console.log(newGrid)
+        // console.log(chalk.magenta("----------THESE MANY EXTRA FLIP HAPPENED DUE TO THE BIG-JOKER-WILD-----------", extraWildTriggeredByBigJokerWild.length));
         return { extraWildTriggeredByBigJokerWild, newGrid, extraWildTriggeredByBigJokerWildCount };
     }
 
     handleGoldenCards(goldenCards: [], grid: any) {
-        console.log(chalk.bgGreen("THESE ARE THE GOLDEN CARDS MATRIX PASSED TO GET FLIPPED CARD"))
+        // console.log(chalk.bgGreen("THESE ARE THE GOLDEN CARDS MATRIX PASSED TO GET FLIPPED CARD"))
         console.log(goldenCards)
         let { goldenToWild, wildType } = reelService.flipGoldenCard(goldenCards);
         let result = {
@@ -497,7 +498,7 @@ export default class Grid {
                     extraWildTriggeredByBigJokerWild,
                     wildFormed,
                     cardsFlipedToWild
-                } = gridService.handleGoldenCards(goldenWinnigCards, modifiedGrid);
+                } = this.handleGoldenCards(goldenWinnigCards, modifiedGrid);
                     result.actualWildCardsCount = actualWildCardsCount,
                     result.actualWildCards = actualWildCards,
                     result.extraWildTriggeredByBigJokerWildCount = extraWildTriggeredByBigJokerWildCount,
@@ -520,6 +521,4 @@ export default class Grid {
     }
 
 }
-export const gridService = new Grid();
-
-;
+export const slotMachine = new SlotMachine();

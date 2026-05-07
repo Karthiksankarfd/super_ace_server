@@ -4,6 +4,7 @@ import { sendToQueue } from '../utils/amqp';
 import { createLogger } from '../utils/logger';
 import type { AccountsResult, BetsData, PlayerDetails, WebhookData, WebhookKey } from "../interfaces/appInterfaces.ts"
 import chalk from 'chalk';
+import { NextFunction } from 'express';
 const thirdPartyLogger = createLogger('ThirdPartyRequest', 'jsonl');
 const failedThirdPartyLogger = createLogger('FailedThirdPartyRequest', 'jsonl');
 
@@ -29,7 +30,6 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
             id,
             operatorId,
             balance,
-            socketId,
             betAmount,
             winAmount,
             roundId
@@ -103,7 +103,7 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
 //     }
 // };
 
-export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Promise<AccountsResult> => {
+export const updateBalanceFromAccount = async (user: any, key: WebhookKey): Promise<AccountsResult> => {
     try {
         console.log("Inside UpdateBalanceFrom account");
         const webhookData = await prepareDataForWebhook({ ...user }, key);
@@ -125,7 +125,6 @@ export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Pro
         if (!sendRequest) return { status: false, type: key };
         console.log("after sendRequest");
          
-
         return { status: true, type: key, txn_id: user.txn_id };
     } catch (err) {
         console.error(`Err while updating Player's balance is`, err);
@@ -160,9 +159,11 @@ export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Pro
 //     }
 // };
 
-export const sendRequestToAccounts = async (webhookData: WebhookData, token: string): Promise<Boolean> => {
+export const sendRequestToAccounts = async (webhookData: WebhookData, token: string ): Promise<Boolean> => {
     try {
+        
         const url = process.env.service_base_url;
+        console.log(url)
         if (!url) throw new Error('Service base URL is not defined');
 
         console.log("here ");
@@ -183,7 +184,6 @@ export const sendRequestToAccounts = async (webhookData: WebhookData, token: str
         thirdPartyLogger.info(JSON.stringify({ logId: generateUUIDv7(), req: clientServerOptions, res: data }));
 
         if (!data.status) {
-
             return false;
         }
 
@@ -191,6 +191,7 @@ export const sendRequestToAccounts = async (webhookData: WebhookData, token: str
     } catch (err: any) {
         console.error(`Err while sending request to accounts is - `, err?.response?.data);
         failedThirdPartyLogger.error(JSON.stringify({ logId: generateUUIDv7(), req: { webhookData, token }, res: err?.response?.status }));
+        console.log(chalk.red("ERROR IN DEBITING THE MONONEY "))
         return false;
     }
 }

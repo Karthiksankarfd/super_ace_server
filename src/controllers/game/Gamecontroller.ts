@@ -1,92 +1,129 @@
-import { NextFunction, Request , Response } from "express";
-import { gridService } from "../../game.services/Grid.services";
+import { NextFunction, Request, Response } from "express";
+import { slotMachine } from "../../game.services/Grid.services";
 import chalk from "chalk";
-import { prepareDataForWebhook, updateBalanceFromAccount } from "../../services/Admin.service";
-import { getCache, setCache } from "../../connections/redisService";
+import { updateBalanceFromAccount } from "../../services/Admin.service";
+import { deleteCache, getCache, setCache } from "../../connections/redisService";
 import MysqlGameRepoServices from "../../infrastructure/database/mysql/MysqlGameRepoServices";
 import Database from "../../infrastructure/database/mysql/Database";
 import { appConfig } from "../../config/appConfig";
+import { getUserDataFromSource } from "../../services/userInfo";
+import { error } from "node:console";
 
 
 const db = Database.getInstance(appConfig.dbConfig)
 db.connect()
 
-
 const pool = Database.getInstance(appConfig.dbConfig)
 const mysqlGameRepoServices = new MysqlGameRepoServices(pool);
 
-class Gamecontroller{
+class Gamecontroller {
 
-    async initGameDetails(){
+  async initGameDetails(req: Request, res: Response) {
 
+    const { token, gameId} = req.body;
+
+    let response = await getUserDataFromSource(token, gameId);
+    console.log(response);
+
+    if (response.status === false || !response?.user_id) {
+      return res.status(400).json(response)
     };
+    
+    let sessionID = `${response.operatorId}-${response.user_id}-superace`
+    let isActive = await getCache(sessionID)
 
-    async spin(req:Request , res:Response , next:NextFunction){
-        console.log(chalk.bgGreen("--------------------------THE SPIN CYCLE HAS STARTED---------------------------"));
-        const { betAmount } =  req.body ;
-        let grid =  gridService.generateGrid() ;
-        let scatterPhaseResultData :any  = []
-        let spinResult = gridService.spin(grid ,  betAmount);
-        let initialGridState = structuredClone(grid) ;
-        gridService.loggSpinResults(spinResult.cascades);    
-        if(spinResult.triggerScatter){            
-            console.log(chalk.bgGreen("--------------------------THE scatter SPIN CYCLE HAS STARTED---------------------------"));
-            // return ;
-            scatterPhaseResultData = gridService.startScatter(betAmount)
-            console.log(chalk.red("-------------------------------THE SCATTER PHASE HAS ENED----------------------------------------------"))
+    if(isActive){
+        return {
+          msg: "You are from a device connected already"
         }
-        console.log(chalk.bgMagenta("|--------------------------THE SPIN CYCLE HAS ENDED---------------------------|"));
-
-        // all should happen in a linear way if one thing fails we might face issue for sure 
-        await updateBalanceFromAccount({...req.body , winAmount: spinResult.spinSessionTotal }, "CREDIT")
-        await  mysqlGameRepoServices.insertSpinData("spin1234" , "dev-team0o090" , betAmount , "priti--2222", spinResult.spinSessionTotal , "transaction-123" , JSON.stringify(req.body))
-        await mysqlGameRepoServices.getData()
-        return res.status(200).json({ initialGridState, spinResult, scatterPhaseResultData })
     };
 
-    // before spin validate the bet data and deduct 
-    // redis will the place which will have the updated user data 
-    async validdateSpin(req: Request , res: Response , next: NextFunction){
+    let baseGameData = {
+      minBet: appConfig.minBetAmount,
+      maxBet: appConfig.maxBetAmount,
+      reelWindow: [
+        ["ACE", "ACE", "ACE", "ACE"],
+        ["KING", "KING", "KING", "KING"],
+        ["QUEEN", "QUEEN", "QUEEN", "QUEEN"],
+        ["JOKER", "JOKER", "JOKER", "JOKER"],
+        ["SPADE", "SPADE", "SPADE", "SPADE"]
+      ]
+    }
+    await setCache(response.user_id , JSON.stringify(response));
+    return res.status(200).json({ ...response, msg: "successfully recieved base game data", ...baseGameData })
+  };
 
-      // each spin will have the spinId that is unique for each spin request 
-      const { betAmount, operatorId, id, user_id , game_id, token ,  minimumBet , maximumBet, spinId } = req.body;
+  async spin(req: Request, res: Response, next: NextFunction) {
 
-      let playerData = await getCache(user_id);
+    console.log(chalk.bgGreen("--------------------------THE SPIN CYCLE HAS STARTED---------------------------"));
 
-      console.log(chalk.redBright("PLAYER DETAILS FROM CACHE"));
-      console.log(playerData);
+    const { betAmount, spinId, spinIdCacheKey , user_id } = req.body;
+    let grid = slotMachine.generateGrid();
+    let scatterPhaseResultData: any = []
+    let spinResult = slotMachine.spin(grid, betAmount);
+    let initialGridState = structuredClone(grid);
+    slotMachine.loggSpinResults(spinResult.cascades);
 
-      let parsedData ;
-
-      if(playerData){
-        parsedData = {...JSON.parse(playerData)}
-      };
-
-      if(parsedData?.spinId === spinId){
-         return res.status(400).json({msg: "Request Is In Progress"})
-      };
-
-      if(betAmount < minimumBet  || betAmount > maximumBet ) return res.status(301).json({msg:"Invalid Bet Amount"});
-
-      if(betAmount > parsedData?.balance!) return res.status(301).json({msg:"Insufficient Balance"});
-
-      let transactinStatus = await updateBalanceFromAccount(req.body , "DEBIT")
-      console.log(transactinStatus);
-      if(!transactinStatus.status){
-          return res.status(403).json({
-            msg:"Failed to debit the balance"
-          })
-      }
-      parsedData.spinId = spinId,
-      console.table(parsedData)
-      parsedData.balance = (parsedData.balance - betAmount)
-      console.table(parsedData)
-      await setCache(user_id , JSON.stringify(parsedData));
-      next();
+    if (spinResult.triggerScatter) {
+      console.log(chalk.bgGreen("--------------------------THE scatter SPIN CYCLE HAS STARTED---------------------------"));
+      scatterPhaseResultData = slotMachine.startScatter(betAmount)
+      console.log(chalk.red("-------------------------------THE SCATTER PHASE HAS ENED----------------------------------------------"))
     };
 
+    try{
+      // all should happen in a linear way if one thing fails we might face issue for sure 
+      await updateBalanceFromAccount({ ...req.body, winAmount: spinResult.spinSessionTotal }, "CREDIT")
+      await mysqlGameRepoServices.insertSpinData(spinIdCacheKey, "dev-team0o090", betAmount, "priti--2222", spinResult.spinSessionTotal, "transaction-123", JSON.stringify(req.body) , next)
+      await deleteCache(`${user_id}-spinId`);
+      console.log("Im running")
+      console.log(chalk.bgMagenta("|--------------------------THE SPIN CYCLE HAS ENDED---------------------------|"));
+      return res.status(200).json({ spinId: spinIdCacheKey, status:"SUCCESS", msg:`successfully executed spin with spinId ${spinIdCacheKey}`, spinSessionTotal:spinResult.spinSessionTotal,  initialGridState, spinResult, scatterPhaseResultData });
+    }catch(e){
+      next(e)
+    }
+  };
+
+  // before spin validate the bet data and deduct 
+  // redis will the place which will have the updated user data 
+  private async validdateSpin(req: Request, res: Response, next: NextFunction) {
+    // each spin will have the spinId that is unique for each spin request 
+    const { betAmount, operatorId, id, user_id, game_id, token, minimumBet, maximumBet, spinId } = req.body;
+    let playerData = await getCache(user_id);
+    console.log(chalk.redBright("PLAYER DETAILS FROM CACHE"));
+    console.log(playerData);
+    let parsedData;
+
+    if (playerData) {
+      parsedData = { ...JSON.parse(playerData) }
+    };
+
+    let spinIdCacheKey = `spinId_${user_id}-${Date.now()}`;
+    let isSpinCachePresent = await getCache(`${user_id}-spinId`);
+
+    console.log(chalk.magenta("THE SPINID PRESENT IN CAHCE", isSpinCachePresent));
+    
+    if (isSpinCachePresent) {
+      return res.status(202).json({ msg: "Cannot place another spin request while previous is in progress" })
+    };
+
+    req.body.spinIdCacheKey = spinIdCacheKey
+
+    if (betAmount < minimumBet || betAmount > maximumBet) return res.status(301).json({ msg: "Invalid Bet Amount" });
+
+    let transactinStatus = await updateBalanceFromAccount(req.body, "DEBIT")
+    console.log(transactinStatus);
+
+    if (!transactinStatus.status) {
+      return next(transactinStatus)
+    };
+
+    // ? store the spinId or reqId only if it passes all
+    await setCache(user_id, JSON.stringify(parsedData));
+    await setCache(`${user_id}-spinId`, spinIdCacheKey)
+    next();
+  };
 
 }
 
 const gameControllerServices = new Gamecontroller();
-export default gameControllerServices ;
+export default gameControllerServices;

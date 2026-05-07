@@ -8,8 +8,10 @@ import { redis } from "../../connections/redisService";
 const client =  new Redis("redis://localhost:6379");
 
 class Redisconnection{
+    
     async createRedisInstance(){
         return await new Promise((reject , resolve)=>{
+
           const client = new Redis("redis://localhost:6379")
 
           client.on("error" ,(err)=>{
@@ -23,7 +25,8 @@ class Redisconnection{
           });
 
         })
-    }
+    };
+    
 }
 
 const redisClient =  new Redisconnection().createRedisInstance()

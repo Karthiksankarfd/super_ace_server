@@ -29,6 +29,7 @@ export const connect = async (): Promise<void> => {
         });
 
         connection.on("close", () => {
+
         console.warn("RabbitMQ connection closed. Reconnecting...");
         // trigger reconnect logic
         });
@@ -86,7 +87,7 @@ const initQueue = async (): Promise<void> => {
     await connect();
 };
 
-//sendToQueue is called when the CREDIT is made for placed bet from webHookData
+// sendToQueue is called when the CREDIT is made for placed bet from webHookData
 // await sendToQueue('', 'games_cashout', JSON.stringify({ ...webhookData, operatorId: playerDetails.operatorId, token: playerDetails.token }));
 export const sendToQueue = async (
     ex: string,
@@ -95,7 +96,9 @@ export const sendToQueue = async (
     delay: number = 0,
     retries: number = 0
 ): Promise<void> => {
+
     try {
+        
         if (!pubChannel || (pubChannel as any).connection?._closing) {
             await connect();
         }
