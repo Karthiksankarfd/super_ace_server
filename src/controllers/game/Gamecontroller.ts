@@ -1,12 +1,12 @@
 import { NextFunction, Request, Response } from "express";
-import { slotMachine } from "../../game.services/Grid.services";
+import { slotMachine } from "../../game.services/Grid.services.js";
 import chalk from "chalk";
-import { updateBalanceFromAccount } from "../../services/Admin.service";
-import { deleteCache, getCache, setCache } from "../../connections/redisService";
-import MysqlGameRepoServices from "../../infrastructure/database/mysql/MysqlGameRepoServices";
-import Database from "../../infrastructure/database/mysql/Database";
-import { appConfig } from "../../config/appConfig";
-import { getUserDataFromSource } from "../../services/userInfo";
+import { updateBalanceFromAccount } from "../../services/Admin.service.js";
+import { deleteCache, getCache, setCache } from "../../connections/redisService.js";
+import MysqlGameRepoServices from "../../infrastructure/database/mysql/MysqlGameRepoServices.js";
+import Database from "../../infrastructure/database/mysql/Database.js";
+import { appConfig } from "../../config/appConfig.js";
+import { getUserDataFromSource } from "../../services/userInfo.js";
 import { error } from "node:console";
 
 

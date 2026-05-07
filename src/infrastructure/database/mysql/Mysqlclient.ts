@@ -1,7 +1,7 @@
 // import { Connection } from 'mysql2';
 import chalk from 'chalk';
 import mysql , {Connection} from 'mysql2/promise';
-import Database from './Database';
+
 
 export default abstract class Mysqlclient{
 

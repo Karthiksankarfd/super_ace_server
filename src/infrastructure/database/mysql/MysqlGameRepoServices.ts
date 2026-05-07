@@ -1,7 +1,7 @@
 import chalk from "chalk";
-import Database from "./Database";
-import Mysqlclient from "./Mysqlclient";
-import { appConfig } from "../../../config/appConfig";
+import Database from "./Database.js";
+import Mysqlclient from "./Mysqlclient.js";
+import { appConfig } from "../../../config/appConfig.js";
 import { NextFunction } from "express";
 
 interface GameRepoServicesInterface {
