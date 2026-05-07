@@ -82,7 +82,7 @@ class Gamecontroller {
     try{
       // all should happen in a linear way if one thing fails we might face issue for sure 
       await updateBalanceFromAccount({ ...req.body, winAmount: spinResult.spinSessionTotal }, "CREDIT")
-      await mysqlGameRepoServices.insertSpinData(spinIdCacheKey, "dev-team0o090", betAmount, "priti--2222", spinResult.spinSessionTotal, "transaction-123", JSON.stringify(req.body) , next)
+      // await mysqlGameRepoServices.insertSpinData(spinIdCacheKey, "dev-team0o090", betAmount, "priti--2222", spinResult.spinSessionTotal, "transaction-123", JSON.stringify(req.body) , next)
       await deleteCache(`${user_id}_spinId`);
       console.log("Im running")
       console.log(chalk.bgMagenta("|--------------------------THE SPIN CYCLE HAS ENDED---------------------------|"));

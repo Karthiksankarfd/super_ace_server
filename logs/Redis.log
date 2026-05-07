@@ -10706,3 +10706,15 @@
 {"level":"info","time":1778154966886,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
 {"level":"info","time":1778154969870,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
 {"level":"info","time":1778154969942,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778154980349,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778154980423,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
+{"level":"info","time":1778155373110,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778155373147,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778155378248,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778155378282,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778155384734,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778155384766,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778155386758,"name":"Redis","msg":"Cache not found: priti_9943"}
+{"level":"info","time":1778155386789,"name":"Redis","msg":"Cache not found: priti_9943_spinId"}
+{"level":"info","time":1778155661892,"name":"Redis","msg":"REDIS CONNECTION ESTABLISHED"}
+{"level":"info","time":1778155661983,"name":"Redis","msg":"REDIS CONNECTION SUCCESSFULL"}
