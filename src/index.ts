@@ -26,7 +26,7 @@ const startServer = async () => {
         });
         app.use(express.json());
         app.use(cors());
-        app.get("/", (req, res) => {res.send("Hello world")})
+        app.get("/", (req, res) => {res.status(200).send({msg: "Hello from super ace node server"})})
         app.use("/api", playerRoutes);
         app.use("/api", spinRoute);
         app.use("/api", historyRoute)

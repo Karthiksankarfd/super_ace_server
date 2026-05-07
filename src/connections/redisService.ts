@@ -9,8 +9,8 @@ import { createLogger } from "../utils/logger.js";
 const logger = createLogger('Redis');
 
 const {
-    host = '127.0.0.1', 
-    port = 6379,
+    host , 
+    port ,
     retry,
     interval,
 } = appConfig.redis;
