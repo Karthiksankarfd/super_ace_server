@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { NextFunction } from 'express';
 const router = express.Router();
 import MysqlGameRepoServices from '../infrastructure/database/mysql/MysqlGameRepoServices.js';
 import Database from '../infrastructure/database/mysql/Database.js';
@@ -10,9 +10,12 @@ db.connect()
 const pool = Database.getInstance(appConfig.dbConfig)
 const mysqlGameRepoServices = new MysqlGameRepoServices(pool);
 
-router.get('/superace/history/:userId', async (req, res) => {
+router.get('/superace/history/:userId', async (req, res, next: NextFunction) => {
   const { userId } = req.params
   const {page , limit } = req.query
+  if(!userId || !page || !limit){
+    return next("Key datas userId || page || limit ||  is missing")
+  }
   let history = await mysqlGameRepoServices.getHistory(Number(page) , Number(limit) , userId)
   return res.send(history);
 });
