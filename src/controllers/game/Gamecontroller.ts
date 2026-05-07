@@ -20,9 +20,10 @@ class Gamecontroller {
 
   async initGameDetails(req: Request, res: Response, next: NextFunction) {
 
-    const { token, game_id , } = req.body;
-
-    if(!token || game_id){
+    const { token, game_id } = req.body;
+    console.log(token)
+    
+    if( !token || !game_id){
           return next("Token or game id is missing")
     }
 
@@ -62,7 +63,7 @@ class Gamecontroller {
     console.log(chalk.bgGreen("--------------------------THE SPIN CYCLE HAS STARTED---------------------------"));
 
     const { betAmount, spinId, spinIdCacheKey , user_id , game_id , token} = req.body;
-    
+
     if(!token || !game_id || !betAmount || !spinIdCacheKey || !user_id){
           return next("Key datas token || game_id || betAmount || spinIdCacheKey || user_id is missing")
     }
