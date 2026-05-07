@@ -80,7 +80,7 @@ export const initializeRedis = async (): Promise<RedisClient> => {
     throw new Error('Unable to initialize Redis');
 };
 
-export const setCache = async (key: string, value: string, expiration: number = 3600*16): Promise<void> => {
+export const setCache = async (key: string, value: string, expiration: number = 3600*1): Promise<void> => {
     if (!redisClient) redisClient = await initializeRedis();
 
     try {
@@ -90,9 +90,10 @@ export const setCache = async (key: string, value: string, expiration: number = 
     }
 };
 
-export const getCache = async (key: string): Promise<string | null> => {
+export const getCache = async (key: string): Promise<string | null > => {
+    
     if (!redisClient) redisClient = await initializeRedis();
-
+    
     try {
         const value = await redisClient.get(key);
         if (value) {
@@ -104,7 +105,8 @@ export const getCache = async (key: string): Promise<string | null> => {
     } catch (err :any) {
         logger.error('Failed to get Cache: ', err.message);
         return null;
-    }
+    };
+
 };
 
 export const deleteCache = async (key: string): Promise<void> => {

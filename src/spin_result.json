@@ -1,0 +1,458 @@
+{
+    "initialGridState": [
+        [
+            {
+                "name": "ACE",
+                "isGolden": false
+            },
+            {
+                "name": "QUEEN",
+                "isGolden": false
+            },
+            {
+                "name": "SPADE",
+                "isGolden": false
+            },
+            {
+                "name": "SCATTER",
+                "isGolden": false
+            }
+        ],
+        [
+            {
+                "name": "SPADE",
+                "isGolden": false
+            },
+            {
+                "name": "HEART",
+                "isGolden": false
+            },
+            {
+                "name": "DIAMOND",
+                "isGolden": false
+            },
+            {
+                "name": "CLUBS",
+                "isGolden": false
+            }
+        ],
+        [
+            {
+                "name": "KING",
+                "isGolden": false
+            },
+            {
+                "name": "QUEEN",
+                "isGolden": false
+            },
+            {
+                "name": "JACK",
+                "isGolden": false
+            },
+            {
+                "name": "SPADE",
+                "isGolden": false
+            }
+        ],
+        [
+            {
+                "name": "SPADE",
+                "isGolden": false
+            },
+            {
+                "name": "HEART",
+                "isGolden": false
+            },
+            {
+                "name": "DIAMOND",
+                "isGolden": false
+            },
+            {
+                "name": "CLUBS",
+                "isGolden": false
+            }
+        ],
+        [
+            {
+                "name": "CLUBS",
+                "isGolden": false
+            },
+            {
+                "name": "CLUBS",
+                "isGolden": false
+            },
+            {
+                "name": "QUEEN",
+                "isGolden": false
+            },
+            {
+                "name": "ACE",
+                "isGolden": false
+            }
+        ]
+    ],
+    "spinResult": {
+        "cascades": [
+            {
+                "actualWildCardsCount": 0,
+                "actualWildCards": [],
+                "extraWildTriggeredByBigJokerWildCount": 0,
+                "extraWildTriggeredByBigJokerWild": [],
+                "wildFormed": "NO WILD FORMED",
+                "cardsFlipedToWild": [],
+                "wins": [
+                    {
+                        "win": "FOUR-OF-KIND",
+                        "char": "SPADE",
+                        "ways": 1,
+                        "payout": 30
+                    }
+                ],
+                "totalWin": 30,
+                "isWinPresent": true,
+                "reelWindowBeforeEvaluation": [
+                    [
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "SPADE",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "SCATTER",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "SPADE",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "HEART",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "KING",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "JACK",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "SPADE",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "SPADE",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "HEART",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        }
+                    ]
+                ],
+                "winningCoordinates": [
+                    [
+                        0,
+                        2
+                    ],
+                    [
+                        1,
+                        0
+                    ],
+                    [
+                        2,
+                        3
+                    ],
+                    [
+                        3,
+                        0
+                    ]
+                ],
+                "isGoldenCardsPresentInWinWays": false,
+                "scatterFormed": false,
+                "replacementCards": [
+                    {
+                        "insertAt": [
+                            0,
+                            2
+                        ],
+                        "card": {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    },
+                    {
+                        "insertAt": [
+                            1,
+                            0
+                        ],
+                        "card": {
+                            "name": "JOKER",
+                            "isGolden": false
+                        }
+                    },
+                    {
+                        "insertAt": [
+                            2,
+                            3
+                        ],
+                        "card": {
+                            "name": "ACE",
+                            "isGolden": false
+                        }
+                    },
+                    {
+                        "insertAt": [
+                            3,
+                            0
+                        ],
+                        "card": {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        }
+                    }
+                ],
+                "reelWindowAfterEvaluation": [
+                    [
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "SCATTER",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "JOKER",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "HEART",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "KING",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "JACK",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "HEART",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        }
+                    ]
+                ],
+                "reelWindowAfterWildFlip": [
+                    [
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "SCATTER",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "JOKER",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "HEART",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "KING",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "JACK",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "HEART",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "DIAMOND",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        }
+                    ],
+                    [
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "CLUBS",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "QUEEN",
+                            "isGolden": false
+                        },
+                        {
+                            "name": "ACE",
+                            "isGolden": false
+                        }
+                    ]
+                ],
+                "comboMultiplierLevel": 1
+            }
+        ],
+        "triggerScatter": false,
+        "spinSessionTotal": 30
+    },
+    "scatterPhaseResultData": []
+}

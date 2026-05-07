@@ -3,6 +3,8 @@ import crypto from 'crypto';
 import { sendToQueue } from '../utils/amqp';
 import { createLogger } from '../utils/logger';
 import type { AccountsResult, BetsData, PlayerDetails, WebhookData, WebhookKey } from "../interfaces/appInterfaces.ts"
+import chalk from 'chalk';
+import { NextFunction } from 'express';
 const thirdPartyLogger = createLogger('ThirdPartyRequest', 'jsonl');
 const failedThirdPartyLogger = createLogger('FailedThirdPartyRequest', 'jsonl');
 
@@ -23,24 +25,21 @@ export const generateUUIDv7 = (): string => {
 
 export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise<WebhookData | false> => {
 
-
     try {
         let {
             id,
             operatorId,
             balance,
-            game_state,
-            socketId,
-            bet_amount,
-            hand_type,
+            betAmount,
+            winAmount,
             roundId
         } = user
 
-        const amountFormatted = bet_amount.toFixed(2);
+        const amountFormatted = betAmount.toFixed(2);
 
         let baseData: WebhookData = {
             txn_id: generateUUIDv7(),
-            roundId,
+            roundId: roundId || "superaceTestRoundID",
             game_id : 11,
             user_id: decodeURIComponent(id)
         };
@@ -48,7 +47,7 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
             return {
                 ...baseData,
                 amount: amountFormatted,
-                description: `${bet_amount.toFixed(2)} debited for Video Poker game for Round ${id}`,
+                description: `${betAmount.toFixed(2)} debited for Super Ace game for Round ${id}`,
                 roundId,
                 txn_type: 0
             }
@@ -56,15 +55,14 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
         } else if (key === "CREDIT") {
             return {
                 ...baseData,
-                amount: bet_amount,
+                amount: winAmount,
                 txn_ref_id: baseData.txn_id,
-                description: `${bet_amount} credited for VideoPoker ${roundId}`,
+                description: `${betAmount} credited for Super Ace ${roundId}`,
                 txn_type: 1
             }
         }
 
         else return baseData;
-
 
     } catch (err) {
         console.error(`[ERR] while trying to prepare data for webhook is::`, err);
@@ -105,7 +103,7 @@ export const prepareDataForWebhook = async (user: any, key: WebhookKey): Promise
 //     }
 // };
 
-export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Promise<AccountsResult> => {
+export const updateBalanceFromAccount = async (user: any, key: WebhookKey): Promise<AccountsResult> => {
     try {
         console.log("Inside UpdateBalanceFrom account");
         const webhookData = await prepareDataForWebhook({ ...user }, key);
@@ -117,14 +115,16 @@ export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Pro
 
         if (key === 'CREDIT') {
             await sendToQueue('', 'games_cashout', JSON.stringify({ ...webhookData, operatorId: user.operatorId, token: user.token }));
+            console.log(chalk.red(`the amount rupees ${webhookData.amount} is sent to queue and will be credited to the user account` ))
             return { status: true, type: key };
         };
 
         user.txn_id = webhookData.txn_id;
         const sendRequest = await sendRequestToAccounts(webhookData, user?.token);
+        console.log(sendRequest)
         if (!sendRequest) return { status: false, type: key };
         console.log("after sendRequest");
-
+         
         return { status: true, type: key, txn_id: user.txn_id };
     } catch (err) {
         console.error(`Err while updating Player's balance is`, err);
@@ -159,9 +159,11 @@ export const updateBalanceFromAccount = async (user: any, key: WebhookKey,): Pro
 //     }
 // };
 
-export const sendRequestToAccounts = async (webhookData: WebhookData, token: string): Promise<Boolean> => {
+export const sendRequestToAccounts = async (webhookData: WebhookData, token: string ): Promise<Boolean> => {
     try {
+        
         const url = process.env.service_base_url;
+        console.log(url)
         if (!url) throw new Error('Service base URL is not defined');
 
         console.log("here ");
@@ -182,7 +184,6 @@ export const sendRequestToAccounts = async (webhookData: WebhookData, token: str
         thirdPartyLogger.info(JSON.stringify({ logId: generateUUIDv7(), req: clientServerOptions, res: data }));
 
         if (!data.status) {
-
             return false;
         }
 
@@ -190,6 +191,7 @@ export const sendRequestToAccounts = async (webhookData: WebhookData, token: str
     } catch (err: any) {
         console.error(`Err while sending request to accounts is - `, err?.response?.data);
         failedThirdPartyLogger.error(JSON.stringify({ logId: generateUUIDv7(), req: { webhookData, token }, res: err?.response?.status }));
+        console.log(chalk.red("ERROR IN DEBITING THE MONONEY "))
         return false;
     }
 }
