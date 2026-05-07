@@ -1,5 +1,5 @@
-import { setCache } from "../../connections/redisService";
-import { getUserDataFromSource } from "../../services/userInfo";
+import { setCache } from "../../connections/redisService.js";
+import { getUserDataFromSource } from "../../services/userInfo.js";
 import { Request , Response } from "express";
 import crypto from "crypto"
 import chalk from "chalk";

@@ -7,7 +7,7 @@ import MysqlGameRepoServices from "../../infrastructure/database/mysql/MysqlGame
 import Database from "../../infrastructure/database/mysql/Database.js";
 import { appConfig } from "../../config/appConfig.js";
 import { getUserDataFromSource } from "../../services/userInfo.js";
-import { error } from "node:console";
+
 
 
 const db = Database.getInstance(appConfig.dbConfig)

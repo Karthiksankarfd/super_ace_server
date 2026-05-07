@@ -1,5 +1,4 @@
 import chalk from "chalk";
-import { redis } from "../connections/redisService";
 
 export type WinType = "THREE-OF-KIND" | "FOUR-OF-KIND" | "FIVE-OF-KIND";
 

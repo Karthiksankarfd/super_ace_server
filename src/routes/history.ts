@@ -1,8 +1,8 @@
 import express from 'express';
 const router = express.Router();
-import MysqlGameRepoServices from '../infrastructure/database/mysql/MysqlGameRepoServices';
-import Database from '../infrastructure/database/mysql/Database';
-import { appConfig } from '../config/appConfig';
+import MysqlGameRepoServices from '../infrastructure/database/mysql/MysqlGameRepoServices.js';
+import Database from '../infrastructure/database/mysql/Database.js';
+import { appConfig } from '../config/appConfig.js';
 import { runInNewContext } from 'node:vm';
 
 const db = Database.getInstance(appConfig.dbConfig)

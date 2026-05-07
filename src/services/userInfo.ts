@@ -1,5 +1,5 @@
 import axios from "axios";
-import { type FinalUserData } from "../interfaces/appInterfaces";
+import { type FinalUserData } from "../interfaces/appInterfaces.js";
 import chalk from "chalk";
 
 const testBaseUrl = 'http://localhost:5800';

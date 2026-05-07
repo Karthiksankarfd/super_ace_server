@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import { type AppConfig}from "../interfaces/appInterfaces.js";
+
 dotenv.config();
 
 function requireEnv(name: string): string {
